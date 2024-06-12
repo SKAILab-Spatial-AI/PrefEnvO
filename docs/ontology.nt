@@ -1,0 +1,479 @@
+<http://purl.org/spatialai/prefenvo/v1/core/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/spatialai/prefenvo/v1/core/> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/spatialai/prefenvo/v1/core/> .
+<http://purl.org/spatialai/prefenvo/v1/core/> <http://purl.org/dc/terms/created> "2024-06-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/spatialai/prefenvo/v1/core/> <http://purl.org/dc/terms/creator> "Kate Beard - https://orcid.org/0000-0002-7703-0270"@en .
+<http://purl.org/spatialai/prefenvo/v1/core/> <http://purl.org/dc/terms/creator> "Kingsley Wiafe-Kwakye - https://orcid.org/0009-0007-3741-3721"@en .
+<http://purl.org/spatialai/prefenvo/v1/core/> <http://purl.org/dc/terms/creator> "Torsten Hahmann - http://orcid.org/0000-0002-5331-5052"@en .
+<http://purl.org/spatialai/prefenvo/v1/core/> <http://purl.org/dc/terms/description> "PrefEnvO is an ontology for capturing and analyzing species-environment relationships."@en .
+<http://purl.org/spatialai/prefenvo/v1/core/> <http://purl.org/dc/terms/identifier> "http://purl.org/spatialai/prefenvo/v1/core/"@en .
+<http://purl.org/spatialai/prefenvo/v1/core/> <http://purl.org/dc/terms/issued> "2024-06-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/spatialai/prefenvo/v1/core/> <http://purl.org/dc/terms/license> "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/)."@en .
+<http://purl.org/spatialai/prefenvo/v1/core/> <http://purl.org/dc/terms/modified> "2024-05-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/spatialai/prefenvo/v1/core/> <http://purl.org/dc/terms/publisher> "Spatial Knowledge and Artificial Intelligence (SKAI) Lab, University of Maine"@en .
+<http://purl.org/spatialai/prefenvo/v1/core/> <http://purl.org/dc/terms/subject> "Environmental preference" .
+<http://purl.org/spatialai/prefenvo/v1/core/> <http://purl.org/dc/terms/subject> "Habitat" .
+<http://purl.org/spatialai/prefenvo/v1/core/> <http://purl.org/dc/terms/subject> "Niche" .
+<http://purl.org/spatialai/prefenvo/v1/core/> <http://purl.org/dc/terms/title> "Preferences for Environments Ontology (PrefEnvO)"@en .
+<http://purl.org/spatialai/prefenvo/v1/core/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/subject
+<http://purl.org/dc/terms/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#definition
+<http://www.w3.org/ns/prov#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/ns/prov#definition> <http://www.w3.org/2000/01/rdf-schema#comment> "A definition quoted from PROV-DM or PROV-CONSTRAINTS that describes the concept expressed with this OWL term."@en .
+<http://www.w3.org/ns/prov#definition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/associatedCluster
+<http://purl.org/spatialai/prefenvo/v1/core/associatedCluster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/associatedCluster> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference> .
+<http://purl.org/spatialai/prefenvo/v1/core/associatedCluster> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/containsPreference
+<http://purl.org/spatialai/prefenvo/v1/core/containsPreference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/containsPreference> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet> .
+<http://purl.org/spatialai/prefenvo/v1/core/containsPreference> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality
+<http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster> .
+<http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/stad/v2/core/QualityKind> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf
+<http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spatialai/prefenvo/v1/core/hasEnvironmentalPreference> .
+<http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spatialai/prefenvo/v1/core/preferenceIn> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "links and organism to its prefernce environmenta."@en .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/hasAuthoritativeSourceDescription
+<http://purl.org/spatialai/prefenvo/v1/core/hasAuthoritativeSourceDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/hasAuthoritativeSourceDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeEnvironmentalPreferenceSet> .
+<http://purl.org/spatialai/prefenvo/v1/core/hasAuthoritativeSourceDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeSourceDescription> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/hasEnvironmentalPreference
+<http://purl.org/spatialai/prefenvo/v1/core/hasEnvironmentalPreference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/hasEnvironmentalPreference> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.org/spatialai/prefenvo/v1/core/hasEnvironmentalPreference> <http://www.w3.org/2000/01/rdf-schema#range> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#unionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank
+<http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance> .
+<http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/prefenvo/v1/core/ImportanceRank> .
+<http://purl.org/spatialai/prefenvo/v1/core/ImportanceRank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance
+<http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference> .
+<http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription
+<http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference> .
+<http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/hasSpatialCoverage
+<http://purl.org/spatialai/prefenvo/v1/core/hasSpatialCoverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/hasSpatialCoverage> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/prefenvo/v1/core/hasSpatialCoverage> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/stad/v2/core/SpatialCoverage> .
+<http://purl.org/spatialai/stad/v2/core/SpatialCoverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/prefenvo/v1/core/hasSpatialCoverage> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spatialai/prefenvo/v1/core/hasSpatialCoverage> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spatialai/prefenvo/v1/core/preferenceIn> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage
+<http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/stad/v2/core/TemporalCoverage> .
+<http://purl.org/spatialai/stad/v2/core/TemporalCoverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spatialai/prefenvo/v1/core/preferenceIn> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/importanceWithin
+<http://purl.org/spatialai/prefenvo/v1/core/importanceWithin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/importanceWithin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance> .
+<http://purl.org/spatialai/prefenvo/v1/core/importanceWithin> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet> .
+<http://purl.org/spatialai/prefenvo/v1/core/importanceWithin> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spatialai/prefenvo/v1/core/preferenceIn> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spatialai/prefenvo/v1/core/predictorImportanceOf> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/maximumPreference
+<http://purl.org/spatialai/prefenvo/v1/core/maximumPreference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/maximumPreference> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription> .
+<http://purl.org/spatialai/prefenvo/v1/core/maximumPreference> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/stad/v2/core/QuantitativeValue> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/minimumPreference
+<http://purl.org/spatialai/prefenvo/v1/core/minimumPreference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/minimumPreference> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription> .
+<http://purl.org/spatialai/prefenvo/v1/core/minimumPreference> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/stad/v2/core/QuantitativeValue> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/predictorImportanceOf
+<http://purl.org/spatialai/prefenvo/v1/core/predictorImportanceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/predictorImportanceOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/preferenceFor
+<http://purl.org/spatialai/prefenvo/v1/core/preferenceFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/preferenceFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference> .
+<http://purl.org/spatialai/prefenvo/v1/core/preferenceFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/stad/v2/core/QualityKind> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/preferenceIn
+<http://purl.org/spatialai/prefenvo/v1/core/preferenceIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/preferenceIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spatialai/prefenvo/v1/core/containsPreference> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/preferenceValue
+<http://purl.org/spatialai/prefenvo/v1/core/preferenceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/prefenvo/v1/core/preferenceValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spatialai/prefenvo/v1/core/QualitativePreferenceDescription> .
+<http://purl.org/spatialai/prefenvo/v1/core/preferenceValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/stad/v2/core/QualitativeValue> .
+<http://purl.org/spatialai/prefenvo/v1/core/preferenceValue> <http://www.w3.org/2000/01/rdf-schema#comment> "used in preference description to to link preference to categorical values."@en .
+# 
+# http://purl.org/spatialai/stad/v2/core/executes
+<http://purl.org/spatialai/stad/v2/core/executes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/stad/v2/core/executes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spatialai/stad/v2/core/AlgorithmExecution> .
+<http://purl.org/spatialai/stad/v2/core/executes> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/stad/v2/core/Implementation> .
+<http://purl.org/spatialai/stad/v2/core/executes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://purl.org/spatialai/stad/v2/core/generatedBy
+<http://purl.org/spatialai/stad/v2/core/generatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/spatialai/stad/v2/core/hasInput
+<http://purl.org/spatialai/stad/v2/core/hasInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/stad/v2/core/hasInput> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://purl.org/spatialai/stad/v2/core/hasParameter
+<http://purl.org/spatialai/stad/v2/core/hasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/stad/v2/core/hasParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spatialai/stad/v2/core/Implementation> .
+<http://purl.org/spatialai/stad/v2/core/hasParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/stad/v2/core/Parameter> .
+<http://purl.org/spatialai/stad/v2/core/hasParameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://purl.org/spatialai/stad/v2/core/implements
+<http://purl.org/spatialai/stad/v2/core/implements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/stad/v2/core/implements> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spatialai/stad/v2/core/Implementation> .
+<http://purl.org/spatialai/stad/v2/core/implements> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/stad/v2/core/Algorithm> .
+<http://purl.org/spatialai/stad/v2/core/implements> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://purl.org/spatialai/stad/v2/core/realizes
+<http://purl.org/spatialai/stad/v2/core/realizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/stad/v2/core/realizes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spatialai/stad/v2/core/AlgorithmExecution> .
+<http://purl.org/spatialai/stad/v2/core/realizes> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/stad/v2/core/Algorithm> .
+<http://purl.org/spatialai/stad/v2/core/realizes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://purl.org/spatialai/stad/v2/core/specifiedBy
+<http://purl.org/spatialai/stad/v2/core/specifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spatialai/stad/v2/core/specifiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spatialai/stad/v2/core/ParameterSetting> .
+<http://purl.org/spatialai/stad/v2/core/specifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spatialai/stad/v2/core/Parameter> .
+<http://purl.org/spatialai/stad/v2/core/specifiedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.w3.org/ns/prov#hadPrimarySource
+<http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/2000/01/rdf-schema#label> "hadPrimarySource" .
+# 
+# http://www.w3.org/ns/prov#wasAttributedTo
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribution is the ascribing of an entity to an agent."@en .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#label> "wasAttributedTo" .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/ns/prov#definition> "Attribution is the ascribing of an entity to an agent."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/spatialai/stad/v2/core/hasValue
+<http://purl.org/spatialai/stad/v2/core/hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeEnvironmentalPreferenceSet
+<http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeEnvironmentalPreferenceSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeEnvironmentalPreferenceSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet> .
+<http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeEnvironmentalPreferenceSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeSourceDescription> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/prefenvo/v1/core/hasAuthoritativeSourceDescription> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeSourceDescription
+<http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeSourceDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeSourceDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#hadPrimarySource> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeSourceDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAttributedTo> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/ComputationalEnvironmentalPreferenceSet
+<http://purl.org/spatialai/prefenvo/v1/core/ComputationalEnvironmentalPreferenceSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/prefenvo/v1/core/ComputationalEnvironmentalPreferenceSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster
+<http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spatialai/stad/v2/core/QualityKind> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference
+<http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/prefenvo/v1/core/associatedCluster> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spatialai/stad/v2/core/QualityKind> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/prefenvo/v1/core/preferenceFor> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet
+<http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/prefenvo/v1/core/containsPreference> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/ImportanceRank
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance
+<http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spatialai/prefenvo/v1/core/PredictorImportanceRank> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spatialai/stad/v2/core/AlgorithmExecution> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/stad/v2/core/generatedBy> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/PredictorImportanceRank
+<http://purl.org/spatialai/prefenvo/v1/core/PredictorImportanceRank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription
+<http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/QualitativePreferenceDescription
+<http://purl.org/spatialai/prefenvo/v1/core/QualitativePreferenceDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/prefenvo/v1/core/QualitativePreferenceDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription> .
+<http://purl.org/spatialai/prefenvo/v1/core/QualitativePreferenceDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/prefenvo/v1/core/preferenceValue> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription
+<http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription> .
+<http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spatialai/stad/v2/core/QuantitativeValue> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/prefenvo/v1/core/maximumPreference> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spatialai/stad/v2/core/QuantitativeValue> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/prefenvo/v1/core/minimumPreference> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://purl.org/spatialai/stad/v2/core/Algorithm
+<http://purl.org/spatialai/stad/v2/core/Algorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/stad/v2/core/Algorithm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://purl.org/spatialai/stad/v2/core/AlgorithmExecution
+<http://purl.org/spatialai/stad/v2/core/AlgorithmExecution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/stad/v2/core/AlgorithmExecution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spatialai/stad/v2/core/Data> .
+<http://purl.org/spatialai/stad/v2/core/Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/stad/v2/core/hasInput> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spatialai/stad/v2/core/AlgorithmExecution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spatialai/stad/v2/core/ParameterSetting> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/stad/v2/core/hasInput> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spatialai/stad/v2/core/AlgorithmExecution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spatialai/stad/v2/core/Algorithm> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/stad/v2/core/realizes> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spatialai/stad/v2/core/AlgorithmExecution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://purl.org/spatialai/stad/v2/core/Data
+# 
+# http://purl.org/spatialai/stad/v2/core/DataTransformation
+<http://purl.org/spatialai/stad/v2/core/DataTransformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/stad/v2/core/DataTransformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spatialai/stad/v2/core/Algorithm> .
+# 
+# http://purl.org/spatialai/stad/v2/core/Implementation
+<http://purl.org/spatialai/stad/v2/core/Implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/stad/v2/core/Implementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spatialai/stad/v2/core/Parameter> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/stad/v2/core/hasParameter> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spatialai/stad/v2/core/Implementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spatialai/stad/v2/core/Algorithm> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/stad/v2/core/implements> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spatialai/stad/v2/core/Implementation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://purl.org/spatialai/stad/v2/core/Parameter
+<http://purl.org/spatialai/stad/v2/core/Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/stad/v2/core/Parameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://purl.org/spatialai/stad/v2/core/ParameterSetting
+<http://purl.org/spatialai/stad/v2/core/ParameterSetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spatialai/stad/v2/core/ParameterSetting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spatialai/stad/v2/core/Parameter> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/stad/v2/core/specifiedBy> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spatialai/stad/v2/core/ParameterSetting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spatialai/stad/v2/core/hasValue> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spatialai/stad/v2/core/ParameterSetting> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://purl.org/spatialai/stad/v2/core/QualitativeValue
+<http://purl.org/spatialai/stad/v2/core/QualitativeValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/spatialai/stad/v2/core/QualityKind
+<http://purl.org/spatialai/stad/v2/core/QualityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/spatialai/stad/v2/core/QuantitativeValue
+<http://purl.org/spatialai/stad/v2/core/QuantitativeValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/spatialai/stad/v2/core/SpatialCoverage
+# 
+# http://purl.org/spatialai/stad/v2/core/TemporalCoverage
+# 
+# http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/ns/prov#definition> "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. "@en .
+# 
+# http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Entity" .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/ns/prov#definition> "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. "@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

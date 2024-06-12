@@ -1,0 +1,1252 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/spatialai/stad/v2/core", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://www.w3.org/2001/XMLSchema", "http://purl.org/spatialai/prefenvo/v1/core" ],
+    "title" : {
+      "en" : "Preferences for Environments Ontology (PrefEnvO)"
+    },
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/",
+    "version" : "1.0",
+    "author" : [ "Torsten Hahmann - http://orcid.org/0000-0002-5331-5052", "Kingsley Wiafe-Kwakye - https://orcid.org/0009-0007-3741-3721", "Kate Beard - https://orcid.org/0000-0002-7703-0270" ],
+    "description" : {
+      "en" : "PrefEnvO is an ontology for capturing and analyzing species-environment relationships."
+    },
+    "other" : {
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "en",
+        "value" : "http://purl.org/spatialai/prefenvo/v1/core/",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "en",
+        "value" : "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/).",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Torsten Hahmann - http://orcid.org/0000-0002-5331-5052",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Kingsley Wiafe-Kwakye - https://orcid.org/0009-0007-3741-3721",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Kate Beard - https://orcid.org/0000-0002-7703-0270",
+        "type" : "label"
+      } ],
+      "subject" : [ {
+        "identifier" : "subject",
+        "language" : "undefined",
+        "value" : "Niche",
+        "type" : "label"
+      }, {
+        "identifier" : "subject",
+        "language" : "undefined",
+        "value" : "Habitat",
+        "type" : "label"
+      }, {
+        "identifier" : "subject",
+        "language" : "undefined",
+        "value" : "Environmental preference",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2024-06-12",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2024-05-30",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "en",
+        "value" : "Spatial Knowledge and Artificial Intelligence (SKAI) Lab, University of Maine",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Preferences for Environments Ontology (PrefEnvO)",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2024-06-12",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "19",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CorrelationCluster"
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/QualitativeValue",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QualitativeValue"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/Implementation",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Implementation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/ComputationalEnvironmentalPreferenceSet",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ComputationalEnvironmentalPreferenceSet"
+    },
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/ImportanceRank",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImportanceRank"
+    },
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Entity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Entity",
+      "undefined" : "Entity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/PredictorImportanceRank",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PredictorImportanceRank"
+    },
+    "id" : "22"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PredictorImportance"
+    },
+    "id" : "23"
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "30"
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/SpatialCoverage",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialCoverage"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "37",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/ParameterSetting",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ParameterSetting"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/AlgorithmExecution",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AlgorithmExecution"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/Algorithm",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Algorithm"
+    },
+    "subClasses" : [ "34" ],
+    "attributes" : [ "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnvironmentalPreferenceSet"
+    },
+    "subClasses" : [ "1", "13" ],
+    "id" : "14"
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Agent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Agent",
+      "undefined" : "Agent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeEnvironmentalPreferenceSet",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AuthoritativeEnvironmentalPreferenceSet"
+    },
+    "id" : "1",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/QualitativePreferenceDescription",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QualitativePreferenceDescription"
+    },
+    "id" : "29",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PreferenceDescription"
+    },
+    "subClasses" : [ "29", "27" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/QualityKind",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QualityKind"
+    },
+    "attributes" : [ "external" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnvironmentalPreference"
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/TemporalCoverage",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporalCoverage"
+    },
+    "attributes" : [ "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/Data",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Data"
+    },
+    "attributes" : [ "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/Parameter",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Parameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QuantitativePreferenceDescription"
+    },
+    "id" : "27",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/DataTransformation",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataTransformation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/QuantitativeValue",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QuantitativeValue"
+    },
+    "attributes" : [ "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeSourceDescription",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AuthoritativeSourceDescription"
+    },
+    "id" : "2"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "45",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "46",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "47",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "48",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "50",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "52",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "54",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "59",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "60",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "64",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "65",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "66",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "67",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "68",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasAuthoritativeSourceDescription",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasAuthoritativeSourceDescription"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/associatedCluster",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "associatedCluster"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/specifiedBy",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "specifiedBy"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasPreferenceDescription"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/executes",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "executes"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasSpatialCoverage",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasSpatialCoverage"
+    },
+    "domain" : "19",
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "14",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "10",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "10",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/implements",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "range" : "32",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implements"
+    },
+    "domain" : "12",
+    "attributes" : [ "external", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "32",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "correlatingQuality"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/predictorImportanceOf",
+    "inverse" : "39",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "predictorImportanceOf"
+    },
+    "domain" : "23",
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceValue",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "preferenceValue"
+    },
+    "minCardinality" : "1",
+    "domain" : "29",
+    "comment" : {
+      "en" : "used in preference description to to link preference to categorical values."
+    },
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasEnvironmentalPreference",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasEnvironmentalPreference"
+    },
+    "domain" : "37",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/specifiedBy",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "specifiedBy"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/implements",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "range" : "32",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implements"
+    },
+    "domain" : "12",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/hasInput",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "range" : "7",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInput"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/hasValue",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "hasValue"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype", "external", "someValues" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/hasParameter",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasParameter"
+    },
+    "domain" : "12",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/maximumPreference",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "maximumPreference"
+    },
+    "domain" : "27",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/hasInput",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "range" : "53",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInput"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/realizes",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "range" : "32",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "realizes"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/maximumPreference",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "maximumPreference"
+    },
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#hadPrimarySource",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "21",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hadPrimarySource",
+      "undefined" : "hadPrimarySource"
+    },
+    "cardinality" : "1",
+    "domain" : "21",
+    "attributes" : [ "external", "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/containsPreference",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "containsPreference"
+    },
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceFor",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "preferenceFor"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasPredictorImportance"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/associatedCluster",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "associatedCluster"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/importanceWithin",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "importanceWithin"
+    },
+    "domain" : "23",
+    "attributes" : [ "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceFor",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "preferenceFor"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasPreferenceDescription"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/containsPreference",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "containsPreference"
+    },
+    "domain" : "14",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasImportanceRank"
+    },
+    "domain" : "23",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/generatedBy",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "generatedBy"
+    },
+    "domain" : "23",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/minimumPreference",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "minimumPreference"
+    },
+    "domain" : "27",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasAuthoritativeSourceDescription",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasAuthoritativeSourceDescription"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/minimumPreference",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "minimumPreference"
+    },
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasImportanceRank"
+    },
+    "domain" : "23",
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "correlatingQuality"
+    },
+    "domain" : "3",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasAttributedTo",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "49",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Attribution is the ascribing of an entity to an agent.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "wasAttributedTo",
+      "undefined" : "wasAttributedTo"
+    },
+    "cardinality" : "1",
+    "domain" : "21",
+    "comment" : {
+      "en" : "Attribution is the ascribing of an entity to an agent."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceIn",
+    "inverse" : "57",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "preferenceIn"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf",
+    "inverse" : "41",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "environmentalPreferenceOf"
+    },
+    "domain" : "42",
+    "comment" : {
+      "en" : "links and organism to its prefernce environmenta."
+    },
+    "attributes" : [ "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/hasParameter",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasParameter"
+    },
+    "domain" : "12",
+    "attributes" : [ "external", "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasPredictorImportance"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "hasTemporalCoverage"
+    },
+    "domain" : "30",
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/realizes",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "range" : "32",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "realizes"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "object" ],
+    "id" : "78"
+  } ]
+}

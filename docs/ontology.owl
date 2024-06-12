@@ -1,0 +1,851 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/spatialai/prefenvo/v1/core/"
+     xml:base="http://purl.org/spatialai/prefenvo/v1/core/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://purl.org/spatialai/prefenvo/v1/core/">
+        <owl:versionIRI rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-12</terms:created>
+        <terms:creator xml:lang="en">Kate Beard - https://orcid.org/0000-0002-7703-0270</terms:creator>
+        <terms:creator xml:lang="en">Kingsley Wiafe-Kwakye - https://orcid.org/0009-0007-3741-3721</terms:creator>
+        <terms:creator xml:lang="en">Torsten Hahmann - http://orcid.org/0000-0002-5331-5052</terms:creator>
+        <terms:description xml:lang="en">PrefEnvO is an ontology for capturing and analyzing species-environment relationships.</terms:description>
+        <terms:identifier xml:lang="en">http://purl.org/spatialai/prefenvo/v1/core/</terms:identifier>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-12</terms:issued>
+        <terms:license xml:lang="en">This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/).</terms:license>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-30</terms:modified>
+        <terms:publisher xml:lang="en">Spatial Knowledge and Artificial Intelligence (SKAI) Lab, University of Maine</terms:publisher>
+        <terms:subject>Environmental preference</terms:subject>
+        <terms:subject>Habitat</terms:subject>
+        <terms:subject>Niche</terms:subject>
+        <terms:title xml:lang="en">Preferences for Environments Ontology (PrefEnvO)</terms:title>
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#definition">
+        <rdfs:comment xml:lang="en">A definition quoted from PROV-DM or PROV-CONSTRAINTS that describes the concept expressed with this OWL term.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/associatedCluster -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/associatedCluster">
+        <rdfs:domain rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference"/>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/containsPreference -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/containsPreference">
+        <rdfs:domain rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet"/>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality">
+        <rdfs:domain rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster"/>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/stad/v2/core/QualityKind"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf">
+        <owl:inverseOf rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/hasEnvironmentalPreference"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/spatialai/prefenvo/v1/core/preferenceIn"/>
+            <rdf:Description rdf:about="http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf"/>
+        </owl:propertyChainAxiom>
+        <rdfs:comment xml:lang="en">links and organism to its prefernce environmenta.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/hasAuthoritativeSourceDescription -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/hasAuthoritativeSourceDescription">
+        <rdfs:domain rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeEnvironmentalPreferenceSet"/>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeSourceDescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/hasEnvironmentalPreference -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/hasEnvironmentalPreference">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference"/>
+                    <rdf:Description rdf:about="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank">
+        <rdfs:domain rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance"/>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/ImportanceRank"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance">
+        <rdfs:domain rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference"/>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription">
+        <rdfs:domain rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference"/>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/hasSpatialCoverage -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/hasSpatialCoverage">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference"/>
+                    <rdf:Description rdf:about="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/stad/v2/core/SpatialCoverage"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/spatialai/prefenvo/v1/core/preferenceIn"/>
+            <rdf:Description rdf:about="http://purl.org/spatialai/prefenvo/v1/core/hasSpatialCoverage"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference"/>
+                    <rdf:Description rdf:about="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/stad/v2/core/TemporalCoverage"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/spatialai/prefenvo/v1/core/preferenceIn"/>
+            <rdf:Description rdf:about="http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/importanceWithin -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/importanceWithin">
+        <rdfs:domain rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance"/>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/spatialai/prefenvo/v1/core/predictorImportanceOf"/>
+            <rdf:Description rdf:about="http://purl.org/spatialai/prefenvo/v1/core/preferenceIn"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/maximumPreference -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/maximumPreference">
+        <rdfs:domain rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription"/>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/stad/v2/core/QuantitativeValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/minimumPreference -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/minimumPreference">
+        <rdfs:domain rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription"/>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/stad/v2/core/QuantitativeValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/predictorImportanceOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/predictorImportanceOf">
+        <owl:inverseOf rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/preferenceFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/preferenceFor">
+        <rdfs:domain rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference"/>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/stad/v2/core/QualityKind"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/preferenceIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/preferenceIn">
+        <owl:inverseOf rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/containsPreference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/preferenceValue -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/prefenvo/v1/core/preferenceValue">
+        <rdfs:domain rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/QualitativePreferenceDescription"/>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/stad/v2/core/QualitativeValue"/>
+        <rdfs:comment xml:lang="en">used in preference description to to link preference to categorical values.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/executes -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/stad/v2/core/executes">
+        <rdfs:domain rdf:resource="http://purl.org/spatialai/stad/v2/core/AlgorithmExecution"/>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/stad/v2/core/Implementation"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/generatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/stad/v2/core/generatedBy"/>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/hasInput -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/stad/v2/core/hasInput">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/hasParameter -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/stad/v2/core/hasParameter">
+        <rdfs:domain rdf:resource="http://purl.org/spatialai/stad/v2/core/Implementation"/>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/stad/v2/core/Parameter"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/implements -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/stad/v2/core/implements">
+        <rdfs:domain rdf:resource="http://purl.org/spatialai/stad/v2/core/Implementation"/>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/stad/v2/core/Algorithm"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/realizes -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/stad/v2/core/realizes">
+        <rdfs:domain rdf:resource="http://purl.org/spatialai/stad/v2/core/AlgorithmExecution"/>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/stad/v2/core/Algorithm"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/specifiedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spatialai/stad/v2/core/specifiedBy">
+        <rdfs:domain rdf:resource="http://purl.org/spatialai/stad/v2/core/ParameterSetting"/>
+        <rdfs:range rdf:resource="http://purl.org/spatialai/stad/v2/core/Parameter"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadPrimarySource -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadPrimarySource">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>hadPrimarySource</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAttributedTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAttributedTo">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:comment xml:lang="en">Attribution is the ascribing of an entity to an agent.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>wasAttributedTo</rdfs:label>
+        <prov:definition xml:lang="en">Attribution is the ascribing of an entity to an agent.</prov:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/spatialai/stad/v2/core/hasValue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeEnvironmentalPreferenceSet -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeEnvironmentalPreferenceSet">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/hasAuthoritativeSourceDescription"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeSourceDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeSourceDescription -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeSourceDescription">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#hadPrimarySource"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAttributedTo"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/ComputationalEnvironmentalPreferenceSet -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/prefenvo/v1/core/ComputationalEnvironmentalPreferenceSet">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spatialai/stad/v2/core/QualityKind"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/associatedCluster"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/preferenceFor"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spatialai/stad/v2/core/QualityKind"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/containsPreference"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/ImportanceRank -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/prefenvo/v1/core/ImportanceRank"/>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/PredictorImportanceRank"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/stad/v2/core/generatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spatialai/stad/v2/core/AlgorithmExecution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/PredictorImportanceRank -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/prefenvo/v1/core/PredictorImportanceRank"/>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription"/>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/QualitativePreferenceDescription -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/prefenvo/v1/core/QualitativePreferenceDescription">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/preferenceValue"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/maximumPreference"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spatialai/stad/v2/core/QuantitativeValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/prefenvo/v1/core/minimumPreference"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spatialai/stad/v2/core/QuantitativeValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/Algorithm -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/stad/v2/core/Algorithm">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/AlgorithmExecution -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/stad/v2/core/AlgorithmExecution">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/stad/v2/core/hasInput"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spatialai/stad/v2/core/Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/stad/v2/core/hasInput"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spatialai/stad/v2/core/ParameterSetting"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/stad/v2/core/realizes"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spatialai/stad/v2/core/Algorithm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/Data -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/stad/v2/core/Data"/>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/DataTransformation -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/stad/v2/core/DataTransformation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spatialai/stad/v2/core/Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/Implementation -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/stad/v2/core/Implementation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/stad/v2/core/hasParameter"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spatialai/stad/v2/core/Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/stad/v2/core/implements"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spatialai/stad/v2/core/Algorithm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/Parameter -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/stad/v2/core/Parameter">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/ParameterSetting -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/stad/v2/core/ParameterSetting">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/stad/v2/core/specifiedBy"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spatialai/stad/v2/core/Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spatialai/stad/v2/core/hasValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/QualitativeValue -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/stad/v2/core/QualitativeValue"/>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/QualityKind -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/stad/v2/core/QualityKind"/>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/QuantitativeValue -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/stad/v2/core/QuantitativeValue"/>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/SpatialCoverage -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/stad/v2/core/SpatialCoverage"/>
+    
+
+
+    <!-- http://purl.org/spatialai/stad/v2/core/TemporalCoverage -->
+
+
+    <owl:Class rdf:about="http://purl.org/spatialai/stad/v2/core/TemporalCoverage"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Agent</rdfs:label>
+        <prov:definition xml:lang="en">An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent&apos;s activity. </prov:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Entity</rdfs:label>
+        <prov:definition xml:lang="en">An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. </prov:definition>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
