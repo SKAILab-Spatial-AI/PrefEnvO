@@ -1,5 +1,5 @@
 [ {
-  "@id" : "_:genid11",
+  "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -9,7 +9,37 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid18",
+  "@id" : "_:genid15",
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/spatialai/prefenvo/v1/core/containsPreference"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference"
+    }, {
+      "@id" : "http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/spatialai/prefenvo/v1/core/containsPreference"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/spatialai/prefenvo/v1/core/containsPreference"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance"
+  } ]
+}, {
+  "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/hasAuthoritativeSourceDescription"
@@ -18,7 +48,7 @@
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeSourceDescription"
   } ]
 }, {
-  "@id" : "_:genid19",
+  "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -28,7 +58,7 @@
     "@id" : "http://www.w3.org/ns/prov#hadPrimarySource"
   } ]
 }, {
-  "@id" : "_:genid20",
+  "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -38,7 +68,7 @@
     "@id" : "http://www.w3.org/ns/prov#wasAttributedTo"
   } ]
 }, {
-  "@id" : "_:genid21",
+  "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://purl.org/spatialai/stad/v2/core/QualityKind"
@@ -47,7 +77,12 @@
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality"
   } ]
 }, {
-  "@id" : "_:genid22",
+  "@id" : "_:genid3",
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/spatialai/prefenvo/v1/core/associatedCluster"
+  } ]
+}, {
+  "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster"
@@ -56,7 +91,7 @@
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/associatedCluster"
   } ]
 }, {
-  "@id" : "_:genid23",
+  "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance"
@@ -65,7 +100,7 @@
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance"
   } ]
 }, {
-  "@id" : "_:genid24",
+  "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription"
@@ -74,7 +109,7 @@
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription"
   } ]
 }, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://purl.org/spatialai/stad/v2/core/QualityKind"
@@ -83,7 +118,7 @@
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceFor"
   } ]
 }, {
-  "@id" : "_:genid26",
+  "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference"
@@ -92,7 +127,7 @@
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/containsPreference"
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank"
@@ -101,7 +136,7 @@
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/PredictorImportanceRank"
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid36",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/spatialai/stad/v2/core/generatedBy"
@@ -110,7 +145,7 @@
     "@id" : "http://purl.org/spatialai/stad/v2/core/AlgorithmExecution"
   } ]
 }, {
-  "@id" : "_:genid29",
+  "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -120,17 +155,7 @@
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceValue"
   } ]
 }, {
-  "@id" : "_:genid3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference"
-    }, {
-      "@id" : "http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid30",
+  "@id" : "_:genid38",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/maximumPreference"
@@ -139,7 +164,7 @@
     "@id" : "http://purl.org/spatialai/stad/v2/core/QuantitativeValue"
   } ]
 }, {
-  "@id" : "_:genid31",
+  "@id" : "_:genid39",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/minimumPreference"
@@ -148,7 +173,7 @@
     "@id" : "http://purl.org/spatialai/stad/v2/core/QuantitativeValue"
   } ]
 }, {
-  "@id" : "_:genid32",
+  "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/spatialai/stad/v2/core/hasInput"
@@ -157,7 +182,7 @@
     "@id" : "http://purl.org/spatialai/stad/v2/core/Data"
   } ]
 }, {
-  "@id" : "_:genid33",
+  "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/spatialai/stad/v2/core/hasInput"
@@ -166,7 +191,7 @@
     "@id" : "http://purl.org/spatialai/stad/v2/core/ParameterSetting"
   } ]
 }, {
-  "@id" : "_:genid34",
+  "@id" : "_:genid42",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/spatialai/stad/v2/core/realizes"
@@ -175,7 +200,7 @@
     "@id" : "http://purl.org/spatialai/stad/v2/core/Algorithm"
   } ]
 }, {
-  "@id" : "_:genid35",
+  "@id" : "_:genid43",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/spatialai/stad/v2/core/hasParameter"
@@ -184,7 +209,7 @@
     "@id" : "http://purl.org/spatialai/stad/v2/core/Parameter"
   } ]
 }, {
-  "@id" : "_:genid36",
+  "@id" : "_:genid44",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/spatialai/stad/v2/core/implements"
@@ -193,7 +218,7 @@
     "@id" : "http://purl.org/spatialai/stad/v2/core/Algorithm"
   } ]
 }, {
-  "@id" : "_:genid37",
+  "@id" : "_:genid45",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/spatialai/stad/v2/core/specifiedBy"
@@ -202,7 +227,7 @@
     "@id" : "http://purl.org/spatialai/stad/v2/core/Parameter"
   } ]
 }, {
-  "@id" : "_:genid38",
+  "@id" : "_:genid46",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/spatialai/stad/v2/core/hasValue"
@@ -212,6 +237,11 @@
   } ]
 }, {
   "@id" : "_:genid6",
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/spatialai/prefenvo/v1/core/containsPreference"
+  } ]
+}, {
+  "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -312,48 +342,72 @@
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeEnvironmentalPreferenceSet",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Environmental preferences derived from literature sources"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet"
   }, {
-    "@id" : "_:genid18"
+    "@id" : "_:genid26"
   } ]
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeSourceDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Provides provenance information for an AuthoritativeEnvironmentalPreferenceSet regarding the source of the information"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid19"
+    "@id" : "_:genid27"
   }, {
-    "@id" : "_:genid20"
+    "@id" : "_:genid28"
   } ]
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/ComputationalEnvironmentalPreferenceSet",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Environmental preferences derived directedly from observation data"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet"
   } ]
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "correlation cluster groups environmental variables based on their similar influence or importance for an organism"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid21"
+    "@id" : "_:genid29"
   } ]
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Specific preference of an organism regarding a specific environmental variable"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid22"
+    "@id" : "_:genid30"
   }, {
-    "@id" : "_:genid23"
+    "@id" : "_:genid31"
   }, {
-    "@id" : "_:genid24"
+    "@id" : "_:genid32"
   }, {
-    "@id" : "_:genid25"
+    "@id" : "_:genid33"
   } ]
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A set of Environmental preferences of an organism for specific location and time"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid26"
+    "@id" : "_:genid34"
   } ]
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/ImportanceRank",
@@ -361,38 +415,62 @@
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Provides an indication of the influence of an environmental variable on an organism or group of organisms"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid27"
+    "@id" : "_:genid35"
   }, {
-    "@id" : "_:genid28"
+    "@id" : "_:genid36"
   } ]
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/PredictorImportanceRank",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : " Provides importance of each preference by assigning a rank to indicate the extent of a preference relative to other preferences of the organism"
+  } ]
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Provides an indication of the influence of an environmental variable on an organism or group of organisms"
+  } ]
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/QualitativePreferenceDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Preferences of environmental variables that are measured qualitatively, typically non-numeric, attributes that denote categorical distinctions such as different soil types"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription"
   }, {
-    "@id" : "_:genid29"
+    "@id" : "_:genid37"
   } ]
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Preferences that can be expressed and measured in numerical terms, encompassing specific quantitative values for environmental variables"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription"
   }, {
-    "@id" : "_:genid30"
+    "@id" : "_:genid38"
   }, {
-    "@id" : "_:genid31"
+    "@id" : "_:genid39"
   } ]
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/associatedCluster",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "links an prefernce environment to its associated correlation cluster."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference"
   } ],
@@ -402,6 +480,10 @@
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/containsPreference",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links EnvironmentalPreferenceSet with every EnvironmentalPreference that is part of the set."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet"
   } ],
@@ -411,25 +493,36 @@
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "connects to every environmental variable that is part of a correlation cluster."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/spatialai/stad/v2/core/QualityKind"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "_:genid3"
+    }, {
+      "@id" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceFor"
+    } ]
   } ]
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "links and organism to its prefernce environmenta."
+    "@value" : "links an organism to its prefernce environment."
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/hasEnvironmentalPreference"
   } ],
   "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
     "@list" : [ {
-      "@id" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceIn"
+      "@id" : "_:genid6"
     }, {
       "@id" : "http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf"
     } ]
@@ -437,6 +530,10 @@
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/hasAuthoritativeSourceDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "links an authoritative preference preference set to the authoritative entity that published the information."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeEnvironmentalPreferenceSet"
   } ],
@@ -446,15 +543,23 @@
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/hasEnvironmentalPreference",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is the inverse of environmentalPreferenceOf; it links an organism to its preferences."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid3"
+    "@id" : "_:genid7"
   } ]
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Assigns a rank to a PredictorImportance instance."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance"
   } ],
@@ -464,6 +569,10 @@
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links EnvironmentalPreference to PredictorImportance."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference"
   } ],
@@ -473,6 +582,10 @@
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links EnvironmentalPreference to PreferenceDescription."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference"
   } ],
@@ -482,15 +595,19 @@
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/hasSpatialCoverage",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links EnvironmentalPreference or EnvironmentalPreferenceSet to spatial region the preference refers."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid6"
+    "@id" : "_:genid10"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/spatialai/stad/v2/core/SpatialCoverage"
   } ],
   "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
     "@list" : [ {
-      "@id" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceIn"
+      "@id" : "_:genid15"
     }, {
       "@id" : "http://purl.org/spatialai/prefenvo/v1/core/hasSpatialCoverage"
     } ]
@@ -498,15 +615,19 @@
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links EnvironmentalPreference or EnvironmentalPreferenceSet to time interval the preference refers."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid11"
+    "@id" : "_:genid16"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/spatialai/stad/v2/core/TemporalCoverage"
   } ],
   "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
     "@list" : [ {
-      "@id" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceIn"
+      "@id" : "_:genid21"
     }, {
       "@id" : "http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage"
     } ]
@@ -514,6 +635,10 @@
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/importanceWithin",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects PredictorImportance to the EnvironmentalPreferenceSet within which relative ranking is valid."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance"
   } ],
@@ -522,14 +647,18 @@
   } ],
   "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
     "@list" : [ {
-      "@id" : "http://purl.org/spatialai/prefenvo/v1/core/predictorImportanceOf"
+      "@id" : "_:genid25"
     }, {
-      "@id" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceIn"
+      "@id" : "_:genid23"
     } ]
   } ]
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/maximumPreference",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Expresses the maximum value of a quantitative preference."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription"
   } ],
@@ -539,6 +668,10 @@
 }, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/minimumPreference",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Expresses the minimum value of a quantitative preference."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription"
   } ],
@@ -546,14 +679,12 @@
     "@id" : "http://purl.org/spatialai/stad/v2/core/QuantitativeValue"
   } ]
 }, {
-  "@id" : "http://purl.org/spatialai/prefenvo/v1/core/predictorImportanceOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance"
-  } ]
-}, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links EnvironmentalPreference to the quality kind for which the preference refers."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference"
   } ],
@@ -561,17 +692,11 @@
     "@id" : "http://purl.org/spatialai/stad/v2/core/QualityKind"
   } ]
 }, {
-  "@id" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceIn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://purl.org/spatialai/prefenvo/v1/core/containsPreference"
-  } ]
-}, {
   "@id" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "used in preference description to to link preference to categorical values."
+    "@value" : "used in preference description to link preference to categorical values."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/spatialai/prefenvo/v1/core/QualitativePreferenceDescription"
@@ -594,11 +719,11 @@
     "@value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid32"
+    "@id" : "_:genid40"
   }, {
-    "@id" : "_:genid33"
+    "@id" : "_:genid41"
   }, {
-    "@id" : "_:genid34"
+    "@id" : "_:genid42"
   } ]
 }, {
   "@id" : "http://purl.org/spatialai/stad/v2/core/Data",
@@ -617,9 +742,9 @@
     "@value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid35"
+    "@id" : "_:genid43"
   }, {
-    "@id" : "_:genid36"
+    "@id" : "_:genid44"
   } ]
 }, {
   "@id" : "http://purl.org/spatialai/stad/v2/core/Parameter",
@@ -636,9 +761,9 @@
     "@value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid37"
+    "@id" : "_:genid45"
   }, {
-    "@id" : "_:genid38"
+    "@id" : "_:genid46"
   } ]
 }, {
   "@id" : "http://purl.org/spatialai/stad/v2/core/QualitativeValue",
@@ -658,6 +783,10 @@
 }, {
   "@id" : "http://purl.org/spatialai/stad/v2/core/executes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links an AlgorithmExecution to the specific Implementaion of the Algorithm executed."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/spatialai/stad/v2/core/AlgorithmExecution"
   } ],
@@ -670,7 +799,17 @@
   } ]
 }, {
   "@id" : "http://purl.org/spatialai/stad/v2/core/generatedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links anything that is generated by an Algorithm to the specific AlgorithmExecution that was used"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/spatialai/stad/v2/core/AlgorithmExecution"
+  } ]
 }, {
   "@id" : "http://purl.org/spatialai/stad/v2/core/hasInput",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],

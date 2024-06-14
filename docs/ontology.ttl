@@ -93,34 +93,43 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://purl.org/spatialai/prefenvo/v1/core/associatedCluster
 :associatedCluster rdf:type owl:ObjectProperty ;
                    rdfs:domain :EnvironmentalPreference ;
-                   rdfs:range :CorrelationCluster .
+                   rdfs:range :CorrelationCluster ;
+                   rdfs:comment "links an prefernce environment to its associated correlation cluster."@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/containsPreference
 :containsPreference rdf:type owl:ObjectProperty ;
                     rdfs:domain :EnvironmentalPreferenceSet ;
-                    rdfs:range :EnvironmentalPreference .
+                    rdfs:range :EnvironmentalPreference ;
+                    rdfs:comment "Links EnvironmentalPreferenceSet with every EnvironmentalPreference that is part of the set."@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality
 :correlatingQuality rdf:type owl:ObjectProperty ;
                     rdfs:domain :CorrelationCluster ;
-                    rdfs:range <http://purl.org/spatialai/stad/v2/core/QualityKind> .
+                    rdfs:range <http://purl.org/spatialai/stad/v2/core/QualityKind> ;
+                    owl:propertyChainAxiom ( [ owl:inverseOf :associatedCluster
+                                             ]
+                                             :preferenceFor
+                                           ) ;
+                    rdfs:comment "connects to every environmental variable that is part of a correlation cluster."@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf
 :environmentalPreferenceOf rdf:type owl:ObjectProperty ;
                            owl:inverseOf :hasEnvironmentalPreference ;
-                           owl:propertyChainAxiom ( :preferenceIn
+                           owl:propertyChainAxiom ( [ owl:inverseOf :containsPreference
+                                                    ]
                                                     :environmentalPreferenceOf
                                                   ) ;
-                           rdfs:comment "links and organism to its prefernce environmenta."@en .
+                           rdfs:comment "links an organism to its prefernce environment."@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/hasAuthoritativeSourceDescription
 :hasAuthoritativeSourceDescription rdf:type owl:ObjectProperty ;
                                    rdfs:domain :AuthoritativeEnvironmentalPreferenceSet ;
-                                   rdfs:range :AuthoritativeSourceDescription .
+                                   rdfs:range :AuthoritativeSourceDescription ;
+                                   rdfs:comment "links an authoritative preference preference set to the authoritative entity that published the information."@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/hasEnvironmentalPreference
@@ -130,25 +139,29 @@ xsd:date rdf:type rdfs:Datatype .
                                          owl:unionOf ( :EnvironmentalPreference
                                                        :EnvironmentalPreferenceSet
                                                      )
-                                       ] .
+                                       ] ;
+                            rdfs:comment "This is the inverse of environmentalPreferenceOf; it links an organism to its preferences."@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank
 :hasImportanceRank rdf:type owl:ObjectProperty ;
                    rdfs:domain :PredictorImportance ;
-                   rdfs:range :ImportanceRank .
+                   rdfs:range :ImportanceRank ;
+                   rdfs:comment "Assigns a rank to a PredictorImportance instance."@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance
 :hasPredictorImportance rdf:type owl:ObjectProperty ;
                         rdfs:domain :EnvironmentalPreference ;
-                        rdfs:range :PredictorImportance .
+                        rdfs:range :PredictorImportance ;
+                        rdfs:comment "Links EnvironmentalPreference to PredictorImportance."@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription
 :hasPreferenceDescription rdf:type owl:ObjectProperty ;
                           rdfs:domain :EnvironmentalPreference ;
-                          rdfs:range :PreferenceDescription .
+                          rdfs:range :PreferenceDescription ;
+                          rdfs:comment "Links EnvironmentalPreference to PreferenceDescription."@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/hasSpatialCoverage
@@ -159,9 +172,11 @@ xsd:date rdf:type rdfs:Datatype .
                                               )
                                 ] ;
                     rdfs:range <http://purl.org/spatialai/stad/v2/core/SpatialCoverage> ;
-                    owl:propertyChainAxiom ( :preferenceIn
+                    owl:propertyChainAxiom ( [ owl:inverseOf :containsPreference
+                                             ]
                                              :hasSpatialCoverage
-                                           ) .
+                                           ) ;
+                    rdfs:comment "Links EnvironmentalPreference or EnvironmentalPreferenceSet to spatial region the preference refers."@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage
@@ -172,64 +187,66 @@ xsd:date rdf:type rdfs:Datatype .
                                                )
                                  ] ;
                      rdfs:range <http://purl.org/spatialai/stad/v2/core/TemporalCoverage> ;
-                     owl:propertyChainAxiom ( :preferenceIn
+                     owl:propertyChainAxiom ( [ owl:inverseOf :containsPreference
+                                              ]
                                               :hasTemporalCoverage
-                                            ) .
+                                            ) ;
+                     rdfs:comment "Links EnvironmentalPreference or EnvironmentalPreferenceSet to time interval the preference refers."@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/importanceWithin
 :importanceWithin rdf:type owl:ObjectProperty ;
                   rdfs:domain :PredictorImportance ;
                   rdfs:range :EnvironmentalPreferenceSet ;
-                  owl:propertyChainAxiom ( :predictorImportanceOf
-                                           :preferenceIn
-                                         ) .
+                  owl:propertyChainAxiom ( [ owl:inverseOf :hasPredictorImportance
+                                           ]
+                                           [ owl:inverseOf :containsPreference
+                                           ]
+                                         ) ;
+                  rdfs:comment "Connects PredictorImportance to the EnvironmentalPreferenceSet within which relative ranking is valid."@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/maximumPreference
 :maximumPreference rdf:type owl:ObjectProperty ;
                    rdfs:domain :QuantitativePreferenceDescription ;
-                   rdfs:range <http://purl.org/spatialai/stad/v2/core/QuantitativeValue> .
+                   rdfs:range <http://purl.org/spatialai/stad/v2/core/QuantitativeValue> ;
+                   rdfs:comment "Expresses the maximum value of a quantitative preference."@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/minimumPreference
 :minimumPreference rdf:type owl:ObjectProperty ;
                    rdfs:domain :QuantitativePreferenceDescription ;
-                   rdfs:range <http://purl.org/spatialai/stad/v2/core/QuantitativeValue> .
-
-
-###  http://purl.org/spatialai/prefenvo/v1/core/predictorImportanceOf
-:predictorImportanceOf rdf:type owl:ObjectProperty ;
-                       owl:inverseOf :hasPredictorImportance .
+                   rdfs:range <http://purl.org/spatialai/stad/v2/core/QuantitativeValue> ;
+                   rdfs:comment "Expresses the minimum value of a quantitative preference."@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/preferenceFor
 :preferenceFor rdf:type owl:ObjectProperty ;
                rdfs:domain :EnvironmentalPreference ;
-               rdfs:range <http://purl.org/spatialai/stad/v2/core/QualityKind> .
-
-
-###  http://purl.org/spatialai/prefenvo/v1/core/preferenceIn
-:preferenceIn rdf:type owl:ObjectProperty ;
-              owl:inverseOf :containsPreference .
+               rdfs:range <http://purl.org/spatialai/stad/v2/core/QualityKind> ;
+               rdfs:comment "Links EnvironmentalPreference to the quality kind for which the preference refers."@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/preferenceValue
 :preferenceValue rdf:type owl:ObjectProperty ;
                  rdfs:domain :QualitativePreferenceDescription ;
                  rdfs:range <http://purl.org/spatialai/stad/v2/core/QualitativeValue> ;
-                 rdfs:comment "used in preference description to to link preference to categorical values."@en .
+                 rdfs:comment "used in preference description to link preference to categorical values."@en .
 
 
 ###  http://purl.org/spatialai/stad/v2/core/executes
 <http://purl.org/spatialai/stad/v2/core/executes> rdf:type owl:ObjectProperty ;
                                                   rdfs:domain <http://purl.org/spatialai/stad/v2/core/AlgorithmExecution> ;
                                                   rdfs:range <http://purl.org/spatialai/stad/v2/core/Implementation> ;
+                                                  rdfs:comment "Links an AlgorithmExecution to the specific Implementaion of the Algorithm executed."@en ;
                                                   rdfs:isDefinedBy "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^xsd:anyURI .
 
 
 ###  http://purl.org/spatialai/stad/v2/core/generatedBy
-<http://purl.org/spatialai/stad/v2/core/generatedBy> rdf:type owl:ObjectProperty .
+<http://purl.org/spatialai/stad/v2/core/generatedBy> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain owl:Thing ;
+                                                     rdfs:range <http://purl.org/spatialai/stad/v2/core/AlgorithmExecution> ;
+                                                     rdfs:comment "Links anything that is generated by an Algorithm to the specific AlgorithmExecution that was used"@en .
 
 
 ###  http://purl.org/spatialai/stad/v2/core/hasInput
@@ -301,7 +318,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                          [ rdf:type owl:Restriction ;
                                                            owl:onProperty :hasAuthoritativeSourceDescription ;
                                                            owl:someValuesFrom :AuthoritativeSourceDescription
-                                                         ] .
+                                                         ] ;
+                                         rdfs:comment "Environmental preferences derived from literature sources"@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeSourceDescription
@@ -313,12 +331,14 @@ xsd:date rdf:type rdfs:Datatype .
                                                 [ rdf:type owl:Restriction ;
                                                   owl:onProperty <http://www.w3.org/ns/prov#wasAttributedTo> ;
                                                   owl:cardinality "1"^^xsd:nonNegativeInteger
-                                                ] .
+                                                ] ;
+                                rdfs:comment "Provides provenance information for an AuthoritativeEnvironmentalPreferenceSet regarding the source of the information"@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/ComputationalEnvironmentalPreferenceSet
 :ComputationalEnvironmentalPreferenceSet rdf:type owl:Class ;
-                                         rdfs:subClassOf :EnvironmentalPreferenceSet .
+                                         rdfs:subClassOf :EnvironmentalPreferenceSet ;
+                                         rdfs:comment "Environmental preferences derived directedly from observation data"@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster
@@ -326,7 +346,8 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:subClassOf [ rdf:type owl:Restriction ;
                                       owl:onProperty :correlatingQuality ;
                                       owl:allValuesFrom <http://purl.org/spatialai/stad/v2/core/QualityKind>
-                                    ] .
+                                    ] ;
+                    rdfs:comment "correlation cluster groups environmental variables based on their similar influence or importance for an organism"@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference
@@ -346,7 +367,8 @@ xsd:date rdf:type rdfs:Datatype .
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty :preferenceFor ;
                                            owl:allValuesFrom <http://purl.org/spatialai/stad/v2/core/QualityKind>
-                                         ] .
+                                         ] ;
+                         rdfs:comment "Specific preference of an organism regarding a specific environmental variable"@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet
@@ -354,7 +376,8 @@ xsd:date rdf:type rdfs:Datatype .
                             rdfs:subClassOf [ rdf:type owl:Restriction ;
                                               owl:onProperty :containsPreference ;
                                               owl:allValuesFrom :EnvironmentalPreference
-                                            ] .
+                                            ] ;
+                            rdfs:comment "A set of Environmental preferences of an organism for specific location and time"@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/ImportanceRank
@@ -370,15 +393,18 @@ xsd:date rdf:type rdfs:Datatype .
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty <http://purl.org/spatialai/stad/v2/core/generatedBy> ;
                                        owl:someValuesFrom <http://purl.org/spatialai/stad/v2/core/AlgorithmExecution>
-                                     ] .
+                                     ] ;
+                     rdfs:comment "Provides an indication of the influence of an environmental variable on an organism or group of organisms"@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/PredictorImportanceRank
-:PredictorImportanceRank rdf:type owl:Class .
+:PredictorImportanceRank rdf:type owl:Class ;
+                         rdfs:comment " Provides importance of each preference by assigning a rank to indicate the extent of a preference relative to other preferences of the organism"@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription
-:PreferenceDescription rdf:type owl:Class .
+:PreferenceDescription rdf:type owl:Class ;
+                       rdfs:comment "Provides an indication of the influence of an environmental variable on an organism or group of organisms"@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/QualitativePreferenceDescription
@@ -387,7 +413,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                   [ rdf:type owl:Restriction ;
                                                     owl:onProperty :preferenceValue ;
                                                     owl:minCardinality "1"^^xsd:nonNegativeInteger
-                                                  ] .
+                                                  ] ;
+                                  rdfs:comment "Preferences of environmental variables that are measured qualitatively, typically non-numeric, attributes that denote categorical distinctions such as different soil types"@en .
 
 
 ###  http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription
@@ -400,7 +427,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                    [ rdf:type owl:Restriction ;
                                                      owl:onProperty :minimumPreference ;
                                                      owl:someValuesFrom <http://purl.org/spatialai/stad/v2/core/QuantitativeValue>
-                                                   ] .
+                                                   ] ;
+                                   rdfs:comment "Preferences that can be expressed and measured in numerical terms, encompassing specific quantitative values for environmental variables"@en .
 
 
 ###  http://purl.org/spatialai/stad/v2/core/Algorithm

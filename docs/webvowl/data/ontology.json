@@ -33,20 +33,21 @@
       }, {
         "identifier" : "creator",
         "language" : "en",
-        "value" : "Kingsley Wiafe-Kwakye - https://orcid.org/0009-0007-3741-3721",
+        "value" : "Kate Beard - https://orcid.org/0000-0002-7703-0270",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "en",
-        "value" : "Kate Beard - https://orcid.org/0000-0002-7703-0270",
+        "value" : "Kingsley Wiafe-Kwakye - https://orcid.org/0009-0007-3741-3721",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2024-06-12",
         "type" : "label"
       } ],
       "subject" : [ {
-        "identifier" : "subject",
-        "language" : "undefined",
-        "value" : "Niche",
-        "type" : "label"
-      }, {
         "identifier" : "subject",
         "language" : "undefined",
         "value" : "Habitat",
@@ -56,23 +57,22 @@
         "language" : "undefined",
         "value" : "Environmental preference",
         "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
+      }, {
+        "identifier" : "subject",
         "language" : "undefined",
-        "value" : "2024-06-12",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2024-05-30",
+        "value" : "Niche",
         "type" : "label"
       } ],
       "publisher" : [ {
         "identifier" : "publisher",
         "language" : "en",
         "value" : "Spatial Knowledge and Artificial Intelligence (SKAI) Lab, University of Maine",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2024-05-30",
         "type" : "label"
       } ],
       "versionInfo" : [ {
@@ -100,7 +100,7 @@
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "11",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
     "id" : "12",
@@ -115,76 +115,79 @@
     "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "22",
+    "id" : "24",
     "type" : "owl:Class"
   }, {
-    "id" : "23",
+    "id" : "25",
     "type" : "owl:Class"
   }, {
-    "id" : "30",
+    "id" : "33",
     "type" : "owl:unionOf"
   }, {
     "id" : "19",
     "type" : "owl:unionOf"
   }, {
+    "id" : "35",
+    "type" : "owl:Thing"
+  }, {
     "id" : "20",
     "type" : "owl:Class"
   }, {
-    "id" : "37",
+    "id" : "38",
     "type" : "owl:Thing"
   }, {
-    "id" : "7",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
     "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "32",
+    "id" : "29",
     "type" : "owl:Class"
   }, {
-    "id" : "44",
+    "id" : "43",
     "type" : "rdfs:Literal"
   }, {
     "id" : "14",
     "type" : "owl:Class"
   }, {
-    "id" : "42",
+    "id" : "41",
     "type" : "owl:unionOf"
   }, {
-    "id" : "49",
+    "id" : "48",
     "type" : "owl:Class"
   }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "29",
+    "id" : "31",
     "type" : "owl:Class"
   }, {
-    "id" : "10",
+    "id" : "11",
     "type" : "owl:Class"
   }, {
-    "id" : "36",
-    "type" : "owl:Class"
-  }, {
-    "id" : "5",
-    "type" : "owl:Class"
-  }, {
-    "id" : "75",
-    "type" : "owl:Class"
-  }, {
-    "id" : "53",
+    "id" : "37",
     "type" : "owl:Class"
   }, {
     "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "27",
+    "id" : "74",
     "type" : "owl:Class"
   }, {
-    "id" : "34",
+    "id" : "53",
     "type" : "owl:Class"
   }, {
-    "id" : "51",
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
     "type" : "owl:Class"
   }, {
     "id" : "2",
@@ -197,16 +200,10 @@
     "label" : {
       "IRI-based" : "CorrelationCluster"
     },
-    "id" : "3"
-  }, {
-    "iri" : "http://purl.org/spatialai/stad/v2/core/QualitativeValue",
-    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "QualitativeValue"
+    "comment" : {
+      "en" : "correlation cluster groups environmental variables based on their similar influence or importance for an organism"
     },
-    "attributes" : [ "external" ],
-    "id" : "11"
+    "id" : "3"
   }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/Implementation",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
@@ -223,6 +220,15 @@
       "IRI-based" : "Implementation"
     },
     "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/QualitativeValue",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QualitativeValue"
+    },
+    "attributes" : [ "external" ],
     "id" : "12"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/ComputationalEnvironmentalPreferenceSet",
@@ -230,6 +236,9 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "ComputationalEnvironmentalPreferenceSet"
+    },
+    "comment" : {
+      "en" : "Environmental preferences derived directedly from observation data"
     },
     "id" : "13",
     "superClasses" : [ "14" ]
@@ -266,31 +275,44 @@
     "attributes" : [ "external" ],
     "id" : "21"
   }, {
-    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/PredictorImportanceRank",
-    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PredictorImportanceRank"
-    },
-    "id" : "22"
-  }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
     "instances" : 0,
     "label" : {
       "IRI-based" : "PredictorImportance"
     },
-    "id" : "23"
+    "comment" : {
+      "en" : "Provides an indication of the influence of an environmental variable on an organism or group of organisms"
+    },
+    "id" : "24"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/PredictorImportanceRank",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PredictorImportanceRank"
+    },
+    "comment" : {
+      "en" : " Provides importance of each preference by assigning a rank to indicate the extent of a preference relative to other preferences of the organism"
+    },
+    "id" : "25"
   }, {
     "instances" : 0,
-    "union" : [ "14", "5" ],
+    "union" : [ "14", "8" ],
     "attributes" : [ "anonymous", "union" ],
-    "id" : "30"
+    "id" : "33"
   }, {
     "instances" : 0,
-    "union" : [ "14", "5" ],
+    "union" : [ "14", "8" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "19"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "35",
+    "label" : {
+      "undefined" : "Thing"
+    }
   }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/SpatialCoverage",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
@@ -303,7 +325,7 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "37",
+    "id" : "38",
     "label" : {
       "undefined" : "Thing"
     }
@@ -323,7 +345,7 @@
       "IRI-based" : "ParameterSetting"
     },
     "attributes" : [ "external" ],
-    "id" : "7"
+    "id" : "5"
   }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/AlgorithmExecution",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
@@ -356,13 +378,13 @@
     "label" : {
       "IRI-based" : "Algorithm"
     },
-    "subClasses" : [ "34" ],
+    "subClasses" : [ "28" ],
     "attributes" : [ "external" ],
-    "id" : "32"
+    "id" : "29"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "44",
+    "id" : "43",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -375,12 +397,15 @@
       "IRI-based" : "EnvironmentalPreferenceSet"
     },
     "subClasses" : [ "1", "13" ],
+    "comment" : {
+      "en" : "A set of Environmental preferences of an organism for specific location and time"
+    },
     "id" : "14"
   }, {
     "instances" : 0,
-    "union" : [ "14", "5" ],
+    "union" : [ "14", "8" ],
     "attributes" : [ "anonymous", "union" ],
-    "id" : "42"
+    "id" : "41"
   }, {
     "iri" : "http://www.w3.org/ns/prov#Agent",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -404,13 +429,16 @@
       "undefined" : "Agent"
     },
     "attributes" : [ "external" ],
-    "id" : "49"
+    "id" : "48"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeEnvironmentalPreferenceSet",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
     "instances" : 0,
     "label" : {
       "IRI-based" : "AuthoritativeEnvironmentalPreferenceSet"
+    },
+    "comment" : {
+      "en" : "Environmental preferences derived from literature sources"
     },
     "id" : "1",
     "superClasses" : [ "14" ]
@@ -421,8 +449,11 @@
     "label" : {
       "IRI-based" : "QualitativePreferenceDescription"
     },
-    "id" : "29",
-    "superClasses" : [ "10" ]
+    "comment" : {
+      "en" : "Preferences of environmental variables that are measured qualitatively, typically non-numeric, attributes that denote categorical distinctions such as different soil types"
+    },
+    "id" : "31",
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
@@ -430,8 +461,11 @@
     "label" : {
       "IRI-based" : "PreferenceDescription"
     },
-    "subClasses" : [ "29", "27" ],
-    "id" : "10"
+    "subClasses" : [ "31", "23" ],
+    "comment" : {
+      "en" : "Provides an indication of the influence of an environmental variable on an organism or group of organisms"
+    },
+    "id" : "11"
   }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/QualityKind",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
@@ -440,7 +474,7 @@
       "IRI-based" : "QualityKind"
     },
     "attributes" : [ "external" ],
-    "id" : "36"
+    "id" : "37"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
@@ -448,7 +482,10 @@
     "label" : {
       "IRI-based" : "EnvironmentalPreference"
     },
-    "id" : "5"
+    "comment" : {
+      "en" : "Specific preference of an organism regarding a specific environmental variable"
+    },
+    "id" : "8"
   }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/TemporalCoverage",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
@@ -457,7 +494,7 @@
       "IRI-based" : "TemporalCoverage"
     },
     "attributes" : [ "external" ],
-    "id" : "75"
+    "id" : "74"
   }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/Data",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
@@ -483,7 +520,7 @@
       "IRI-based" : "Parameter"
     },
     "attributes" : [ "external" ],
-    "id" : "8"
+    "id" : "6"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
@@ -491,8 +528,11 @@
     "label" : {
       "IRI-based" : "QuantitativePreferenceDescription"
     },
-    "id" : "27",
-    "superClasses" : [ "10" ]
+    "comment" : {
+      "en" : "Preferences that can be expressed and measured in numerical terms, encompassing specific quantitative values for environmental variables"
+    },
+    "id" : "23",
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/DataTransformation",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
@@ -501,8 +541,8 @@
       "IRI-based" : "DataTransformation"
     },
     "attributes" : [ "external" ],
-    "id" : "34",
-    "superClasses" : [ "32" ]
+    "id" : "28",
+    "superClasses" : [ "29" ]
   }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/QuantitativeValue",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
@@ -511,13 +551,16 @@
       "IRI-based" : "QuantitativeValue"
     },
     "attributes" : [ "external" ],
-    "id" : "51"
+    "id" : "50"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeSourceDescription",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
     "instances" : 0,
     "label" : {
       "IRI-based" : "AuthoritativeSourceDescription"
+    },
+    "comment" : {
+      "en" : "Provides provenance information for an AuthoritativeEnvironmentalPreferenceSet regarding the source of the information"
     },
     "id" : "2"
   } ],
@@ -528,10 +571,10 @@
     "id" : "4",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "6",
+    "id" : "7",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "9",
+    "id" : "10",
     "type" : "owl:objectProperty"
   }, {
     "id" : "16",
@@ -540,37 +583,37 @@
     "id" : "18",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "24",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "25",
+    "id" : "22",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "26",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "28",
+    "id" : "27",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "31",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "33",
+    "id" : "30",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "35",
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "38",
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
     "type" : "owl:objectProperty"
   }, {
     "id" : "40",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "41",
-    "type" : "owl:objectProperty"
+    "id" : "42",
+    "type" : "owl:someValuesFrom"
   }, {
-    "id" : "43",
+    "id" : "44",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "45",
@@ -582,17 +625,17 @@
     "id" : "47",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "48",
+    "id" : "49",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "50",
+    "id" : "51",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "52",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "54",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "55",
     "type" : "owl:objectProperty"
@@ -601,7 +644,7 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "57",
-    "type" : "owl:objectProperty"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "58",
     "type" : "owl:allValuesFrom"
@@ -610,19 +653,19 @@
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "60",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "61",
     "type" : "owl:objectProperty"
   }, {
     "id" : "62",
-    "type" : "owl:objectProperty"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "63",
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "64",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "65",
     "type" : "owl:someValuesFrom"
@@ -634,16 +677,16 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "68",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "69",
     "type" : "owl:objectProperty"
   }, {
     "id" : "70",
-    "type" : "owl:objectProperty"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "71",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "72",
     "type" : "owl:objectProperty"
@@ -651,13 +694,10 @@
     "id" : "73",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "74",
+    "id" : "75",
     "type" : "owl:objectProperty"
   }, {
     "id" : "76",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "39",
     "type" : "owl:objectProperty"
   }, {
     "id" : "77",
@@ -674,22 +714,15 @@
       "IRI-based" : "hasAuthoritativeSourceDescription"
     },
     "domain" : "1",
+    "comment" : {
+      "en" : "links an authoritative preference preference set to the authoritative entity that published the information."
+    },
     "attributes" : [ "object" ],
     "id" : "0"
   }, {
-    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/associatedCluster",
-    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "3",
-    "label" : {
-      "IRI-based" : "associatedCluster"
-    },
-    "domain" : "5",
-    "attributes" : [ "object" ],
-    "id" : "4"
-  }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/specifiedBy",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
-    "range" : "8",
+    "range" : "6",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -701,23 +734,39 @@
     "label" : {
       "IRI-based" : "specifiedBy"
     },
-    "domain" : "7",
+    "domain" : "5",
     "attributes" : [ "external", "object" ],
-    "id" : "6"
+    "id" : "4"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/associatedCluster",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "associatedCluster"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "links an prefernce environment to its associated correlation cluster."
+    },
+    "attributes" : [ "object" ],
+    "id" : "7"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "10",
+    "range" : "11",
     "label" : {
       "IRI-based" : "hasPreferenceDescription"
     },
-    "domain" : "5",
+    "domain" : "8",
+    "comment" : {
+      "en" : "Links EnvironmentalPreference to PreferenceDescription."
+    },
     "attributes" : [ "object" ],
-    "id" : "9"
+    "id" : "10"
   }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/executes",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
-    "range" : "12",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -730,6 +779,9 @@
       "IRI-based" : "executes"
     },
     "domain" : "17",
+    "comment" : {
+      "en" : "Links an AlgorithmExecution to the specific Implementaion of the Algorithm executed."
+    },
     "attributes" : [ "external", "object" ],
     "id" : "16"
   }, {
@@ -740,32 +792,40 @@
       "IRI-based" : "hasSpatialCoverage"
     },
     "domain" : "19",
+    "comment" : {
+      "en" : "Links EnvironmentalPreference or EnvironmentalPreferenceSet to spatial region the preference refers."
+    },
     "attributes" : [ "object" ],
     "id" : "18"
   }, {
-    "range" : "14",
-    "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "24"
+    "range" : "11",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
   }, {
     "range" : "14",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "25"
-  }, {
-    "range" : "10",
-    "domain" : "27",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "26"
   }, {
-    "range" : "10",
-    "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "28"
+    "range" : "29",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "11",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
   }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/implements",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
-    "range" : "32",
+    "range" : "29",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -777,63 +837,53 @@
     "label" : {
       "IRI-based" : "implements"
     },
-    "domain" : "12",
+    "domain" : "9",
     "attributes" : [ "external", "object" ],
-    "id" : "31"
-  }, {
-    "range" : "32",
-    "domain" : "34",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "33"
+    "id" : "34"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "36",
+    "range" : "37",
     "label" : {
       "IRI-based" : "correlatingQuality"
     },
     "domain" : "3",
-    "attributes" : [ "object" ],
-    "id" : "35"
-  }, {
-    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/predictorImportanceOf",
-    "inverse" : "39",
-    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "5",
-    "label" : {
-      "IRI-based" : "predictorImportanceOf"
+    "comment" : {
+      "en" : "connects to every environmental variable that is part of a correlation cluster."
     },
-    "domain" : "23",
     "attributes" : [ "object" ],
-    "id" : "38"
+    "id" : "36"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceValue",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "11",
+    "range" : "12",
     "label" : {
       "IRI-based" : "preferenceValue"
     },
     "minCardinality" : "1",
-    "domain" : "29",
+    "domain" : "31",
     "comment" : {
-      "en" : "used in preference description to to link preference to categorical values."
+      "en" : "used in preference description to link preference to categorical values."
+    },
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasEnvironmentalPreference",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasEnvironmentalPreference"
+    },
+    "domain" : "35",
+    "comment" : {
+      "en" : "This is the inverse of environmentalPreferenceOf; it links an organism to its preferences."
     },
     "attributes" : [ "object" ],
     "id" : "40"
   }, {
-    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasEnvironmentalPreference",
-    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "42",
-    "label" : {
-      "IRI-based" : "hasEnvironmentalPreference"
-    },
-    "domain" : "37",
-    "attributes" : [ "object" ],
-    "id" : "41"
-  }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/specifiedBy",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
-    "range" : "8",
+    "range" : "6",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -845,13 +895,13 @@
     "label" : {
       "IRI-based" : "specifiedBy"
     },
-    "domain" : "7",
+    "domain" : "5",
     "attributes" : [ "external", "object", "someValues" ],
-    "id" : "43"
+    "id" : "42"
   }, {
-    "iri" : "http://purl.org/spatialai/stad/v2/core/implements",
+    "iri" : "http://purl.org/spatialai/stad/v2/core/hasParameter",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
-    "range" : "32",
+    "range" : "6",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -861,15 +911,15 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "implements"
+      "IRI-based" : "hasParameter"
     },
-    "domain" : "12",
+    "domain" : "9",
     "attributes" : [ "external", "object", "someValues" ],
-    "id" : "45"
+    "id" : "44"
   }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/hasInput",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
-    "range" : "7",
+    "range" : "5",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -883,21 +933,21 @@
     },
     "domain" : "17",
     "attributes" : [ "external", "object", "someValues" ],
-    "id" : "46"
+    "id" : "45"
   }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/hasValue",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
-    "range" : "44",
+    "range" : "43",
     "label" : {
       "IRI-based" : "hasValue"
     },
-    "domain" : "7",
-    "attributes" : [ "datatype", "external", "someValues" ],
-    "id" : "47"
+    "domain" : "5",
+    "attributes" : [ "external", "datatype", "someValues" ],
+    "id" : "46"
   }, {
-    "iri" : "http://purl.org/spatialai/stad/v2/core/hasParameter",
+    "iri" : "http://purl.org/spatialai/stad/v2/core/implements",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
-    "range" : "8",
+    "range" : "29",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -907,21 +957,42 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "hasParameter"
+      "IRI-based" : "implements"
     },
-    "domain" : "12",
+    "domain" : "9",
     "attributes" : [ "external", "object", "someValues" ],
-    "id" : "48"
+    "id" : "47"
   }, {
-    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/maximumPreference",
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/minimumPreference",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "51",
+    "range" : "50",
     "label" : {
-      "IRI-based" : "maximumPreference"
+      "IRI-based" : "minimumPreference"
     },
-    "domain" : "27",
+    "domain" : "23",
+    "comment" : {
+      "en" : "Expresses the minimum value of a quantitative preference."
+    },
     "attributes" : [ "object", "someValues" ],
-    "id" : "50"
+    "id" : "49"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/realizes",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "range" : "29",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "realizes"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "51"
   }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/hasInput",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
@@ -941,33 +1012,18 @@
     "attributes" : [ "external", "object", "someValues" ],
     "id" : "52"
   }, {
-    "iri" : "http://purl.org/spatialai/stad/v2/core/realizes",
-    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
-    "range" : "32",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "realizes"
-    },
-    "domain" : "17",
-    "attributes" : [ "external", "object", "someValues" ],
-    "id" : "54"
-  }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/maximumPreference",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "51",
+    "range" : "50",
     "label" : {
       "IRI-based" : "maximumPreference"
     },
-    "domain" : "27",
+    "domain" : "23",
+    "comment" : {
+      "en" : "Expresses the maximum value of a quantitative preference."
+    },
     "attributes" : [ "object" ],
-    "id" : "55"
+    "id" : "54"
   }, {
     "iri" : "http://www.w3.org/ns/prov#hadPrimarySource",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -987,37 +1043,33 @@
     "cardinality" : "1",
     "domain" : "21",
     "attributes" : [ "external", "object" ],
-    "id" : "56"
+    "id" : "55"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/containsPreference",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "5",
+    "range" : "8",
     "label" : {
       "IRI-based" : "containsPreference"
     },
     "domain" : "14",
+    "comment" : {
+      "en" : "Links EnvironmentalPreferenceSet with every EnvironmentalPreference that is part of the set."
+    },
     "attributes" : [ "object" ],
-    "id" : "57"
+    "id" : "56"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceFor",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "36",
+    "range" : "37",
     "label" : {
       "IRI-based" : "preferenceFor"
     },
-    "domain" : "5",
-    "attributes" : [ "object", "allValues" ],
-    "id" : "58"
-  }, {
-    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance",
-    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "23",
-    "label" : {
-      "IRI-based" : "hasPredictorImportance"
+    "domain" : "8",
+    "comment" : {
+      "en" : "Links EnvironmentalPreference to the quality kind for which the preference refers."
     },
-    "domain" : "5",
-    "attributes" : [ "object", "allValues" ],
-    "id" : "59"
+    "attributes" : [ "allValues", "object" ],
+    "id" : "57"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/associatedCluster",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
@@ -1025,8 +1077,37 @@
     "label" : {
       "IRI-based" : "associatedCluster"
     },
-    "domain" : "5",
-    "attributes" : [ "object", "allValues" ],
+    "domain" : "8",
+    "comment" : {
+      "en" : "links an prefernce environment to its associated correlation cluster."
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasPreferenceDescription"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Links EnvironmentalPreference to PreferenceDescription."
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceFor",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "preferenceFor"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Links EnvironmentalPreference to the quality kind for which the preference refers."
+    },
+    "attributes" : [ "object" ],
     "id" : "60"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/importanceWithin",
@@ -1035,49 +1116,38 @@
     "label" : {
       "IRI-based" : "importanceWithin"
     },
-    "domain" : "23",
+    "domain" : "24",
+    "comment" : {
+      "en" : "Connects PredictorImportance to the EnvironmentalPreferenceSet within which relative ranking is valid."
+    },
     "attributes" : [ "object" ],
     "id" : "61"
   }, {
-    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceFor",
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "36",
+    "range" : "24",
     "label" : {
-      "IRI-based" : "preferenceFor"
+      "IRI-based" : "hasPredictorImportance"
     },
-    "domain" : "5",
-    "attributes" : [ "object" ],
+    "domain" : "8",
+    "comment" : {
+      "en" : "Links EnvironmentalPreference to PredictorImportance."
+    },
+    "attributes" : [ "allValues", "object" ],
     "id" : "62"
-  }, {
-    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription",
-    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "10",
-    "label" : {
-      "IRI-based" : "hasPreferenceDescription"
-    },
-    "domain" : "5",
-    "attributes" : [ "object", "allValues" ],
-    "id" : "63"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/containsPreference",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "5",
+    "range" : "8",
     "label" : {
       "IRI-based" : "containsPreference"
     },
     "domain" : "14",
-    "attributes" : [ "object", "allValues" ],
-    "id" : "64"
-  }, {
-    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank",
-    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "22",
-    "label" : {
-      "IRI-based" : "hasImportanceRank"
+    "comment" : {
+      "en" : "Links EnvironmentalPreferenceSet with every EnvironmentalPreference that is part of the set."
     },
-    "domain" : "23",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "65"
+    "attributes" : [ "allValues", "object" ],
+    "id" : "63"
   }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/generatedBy",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
@@ -1085,19 +1155,38 @@
     "label" : {
       "IRI-based" : "generatedBy"
     },
-    "domain" : "23",
-    "attributes" : [ "external", "object", "someValues" ],
-    "id" : "66"
-  }, {
-    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/minimumPreference",
-    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "51",
-    "label" : {
-      "IRI-based" : "minimumPreference"
+    "domain" : "24",
+    "comment" : {
+      "en" : "Links anything that is generated by an Algorithm to the specific AlgorithmExecution that was used"
     },
-    "domain" : "27",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasImportanceRank"
+    },
+    "domain" : "24",
+    "comment" : {
+      "en" : "Assigns a rank to a PredictorImportance instance."
+    },
     "attributes" : [ "object", "someValues" ],
-    "id" : "67"
+    "id" : "65"
+  }, {
+    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/maximumPreference",
+    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "maximumPreference"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "Expresses the maximum value of a quantitative preference."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "66"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasAuthoritativeSourceDescription",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
@@ -1106,18 +1195,24 @@
       "IRI-based" : "hasAuthoritativeSourceDescription"
     },
     "domain" : "1",
+    "comment" : {
+      "en" : "links an authoritative preference preference set to the authoritative entity that published the information."
+    },
     "attributes" : [ "object", "someValues" ],
-    "id" : "68"
+    "id" : "67"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/minimumPreference",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "51",
+    "range" : "50",
     "label" : {
       "IRI-based" : "minimumPreference"
     },
-    "domain" : "27",
+    "domain" : "23",
+    "comment" : {
+      "en" : "Expresses the minimum value of a quantitative preference."
+    },
     "attributes" : [ "object" ],
-    "id" : "69"
+    "id" : "68"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
@@ -1125,23 +1220,29 @@
     "label" : {
       "IRI-based" : "hasImportanceRank"
     },
-    "domain" : "23",
+    "domain" : "24",
+    "comment" : {
+      "en" : "Assigns a rank to a PredictorImportance instance."
+    },
     "attributes" : [ "object" ],
-    "id" : "70"
+    "id" : "69"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "36",
+    "range" : "37",
     "label" : {
       "IRI-based" : "correlatingQuality"
     },
     "domain" : "3",
-    "attributes" : [ "object", "allValues" ],
-    "id" : "71"
+    "comment" : {
+      "en" : "connects to every environmental variable that is part of a correlation cluster."
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "70"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasAttributedTo",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "49",
+    "range" : "48",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1166,36 +1267,38 @@
       "en" : "Attribution is the ascribing of an entity to an agent."
     },
     "attributes" : [ "external", "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://purl.org/spatialai/stad/v2/core/generatedBy",
+    "baseIri" : "http://purl.org/spatialai/stad/v2/core",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "generatedBy"
+    },
+    "domain" : "38",
+    "comment" : {
+      "en" : "Links anything that is generated by an Algorithm to the specific AlgorithmExecution that was used"
+    },
+    "attributes" : [ "external", "object" ],
     "id" : "72"
   }, {
-    "iri" : "http://purl.org/spatialai/prefenvo/v1/core/preferenceIn",
-    "inverse" : "57",
-    "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "14",
-    "label" : {
-      "IRI-based" : "preferenceIn"
-    },
-    "domain" : "5",
-    "attributes" : [ "object" ],
-    "id" : "73"
-  }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf",
-    "inverse" : "41",
+    "inverse" : "40",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "37",
+    "range" : "35",
     "label" : {
       "IRI-based" : "environmentalPreferenceOf"
     },
-    "domain" : "42",
+    "domain" : "41",
     "comment" : {
-      "en" : "links and organism to its prefernce environmenta."
+      "en" : "links an organism to its prefernce environment."
     },
     "attributes" : [ "object" ],
-    "id" : "74"
+    "id" : "73"
   }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/hasParameter",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
-    "range" : "8",
+    "range" : "6",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1207,33 +1310,39 @@
     "label" : {
       "IRI-based" : "hasParameter"
     },
-    "domain" : "12",
+    "domain" : "9",
     "attributes" : [ "external", "object" ],
-    "id" : "76"
+    "id" : "75"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "23",
+    "range" : "24",
     "label" : {
       "IRI-based" : "hasPredictorImportance"
     },
-    "domain" : "5",
+    "domain" : "8",
+    "comment" : {
+      "en" : "Links EnvironmentalPreference to PredictorImportance."
+    },
     "attributes" : [ "object" ],
-    "id" : "39"
+    "id" : "76"
   }, {
     "iri" : "http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage",
     "baseIri" : "http://purl.org/spatialai/prefenvo/v1/core",
-    "range" : "75",
+    "range" : "74",
     "label" : {
       "IRI-based" : "hasTemporalCoverage"
     },
-    "domain" : "30",
+    "domain" : "33",
+    "comment" : {
+      "en" : "Links EnvironmentalPreference or EnvironmentalPreferenceSet to time interval the preference refers."
+    },
     "attributes" : [ "object" ],
     "id" : "77"
   }, {
     "iri" : "http://purl.org/spatialai/stad/v2/core/realizes",
     "baseIri" : "http://purl.org/spatialai/stad/v2/core",
-    "range" : "32",
+    "range" : "29",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",

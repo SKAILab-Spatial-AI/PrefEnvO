@@ -64,7 +64,7 @@ $(function(){
 <body>
 <div class="container">
 <div class="head">
-<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<div style="float:right">language <a href="prefenvo.html"><b>en</b></a> </div>
 <h1>Preferences for Environments Ontology (PrefEnvO)</h1>
 <h2>Release: 2024-06-12</h2>
 
@@ -79,15 +79,28 @@ $(function(){
 <dd>1.0</dd>
 <dt>Issued on:</dt>
 <dd>2024-06-12</dd>
-<dt>Authors:</dt>
-<dd>Kate Beard - https://orcid.org/0000-0002-7703-0270</dd><dd>Kingsley Wiafe-Kwakye - https://orcid.org/0009-0007-3741-3721</dd><dd>Torsten Hahmann - http://orcid.org/0000-0002-5331-5052</dd>
+
+<dt>Creators:</dt>
+<dd>
+	<a href="https://umaine.edu/scis/people/kingsley-wiafe-kwakye/" target="_blank">Kingsley Wiafe-Kwakye</a>,
+	<a href="https://umaine.edu/scis/people/kate-beard-tisdale/" target="_blank">Kate Beard</a>,
+	<a href="https://umaine.edu/scis/people/torsten-hahmann/" target="_blank">Torsten Hahmann</a>
+</dd>
 
 <dt>Publisher:</dt>
-<dd>Spatial Knowledge and Artificial Intelligence (SKAI) Lab, University of Maine</dd>
+<dd>
+	<a href="https://ai.umaine.edu/skailab/" target="_blank">Spatial Knowledge and Artificial Intelligence (SKAI) Lab, University of Maine</a>,
+</dd>
+
 <dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.example.org" target="_blank"><img src="https://img.shields.io/badge/License-This%20work%20is%20distributed%20under%20a%20Creative%20Commons%20Attribution%20License%20(https://creativecommons.org/licenses/by/4.0/).-blue.svg" alt="http://insertlicenseURIhere.example.org" /></a>
+
+<dt>Repository:</dt>
+<dd><a href="https://github.com/theSKAILab/OnNER" target="_blank">https://github.com/theSKAILab/PrefEnvO</a></dd>
+
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
-<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Kate Beard - https://orcid.org/0000-0002-7703-0270, Kingsley Wiafe-Kwakye - https://orcid.org/0009-0007-3741-3721, Torsten Hahmann - http://orcid.org/0000-0002-5331-5052. Preferences for Environments Ontology (PrefEnvO). Revision: 1.0. Retrieved from: http://purl.org/spatialai/prefenvo/v1/core/</dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> -->
+<dt>Cite as:</dt>
+<dd>. . .</dd>
 </dl>
 
 <hr/>
@@ -96,15 +109,14 @@ $(function(){
 <div>
 <span>Ontology Specification Draft</span>
 </div>
-</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
-</div>
+</div>     
+<div id="abstract">The Preferences for Environments Ontology (PrefEnvO) provides a detailed framework for capturing and analyzing species-environment relationships, addressing the granularity needed to represent diverse organisms' preferences across varied environmental conditions. It offers a structured vocabulary for specifying species' environmental preferences, considering spatial and temporal dimensions.</div>
 <div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
-    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+Understanding the dynamics influencing species distribution and predicting their consequences has become a critical focus within ecology, especially amid growing concerns about rapid environmental change and its impact on endangered species and ecosystem functions. Environmental conditions like climate significantly influence organism diversity across large spatial scales, and species exhibit varying responses to these variables across space and time. Better comprehension of the spatio-temporal responses of organisms to environmental variables is crucial for elucidating their distributions. Ontologies facilitate data integration and enrichment essential for understanding these interactions, but questions remain about specific environmental conditions influencing organisms' well-being. To address this, we introduce the Preferences for Environments Ontology (PrefEnvO) pattern, designed to model interactions between organisms and environmental variables, enabling detailed querying and analysis for various practical applications.</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
@@ -129,7 +141,7 @@ This is a place holder text for the introduction. The introduction should briefl
   
 
 <!--OVERVIEW SECTION-->
-    <div id="overview"><h2 id="overv" class="list">Preferences for Environments Ontology (PrefEnvO): Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+    <div id="overview"><h2 id="overv" class="list">Ontology Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
@@ -219,6 +231,18 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#PredictorImportanceRank"
+         title="http://purl.org/spatialai/prefenvo/v1/core/PredictorImportanceRank">
+         <span>Predictor Importance Rank</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PreferenceDescription"
+         title="http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription">
+         <span>Preference Description</span>
+      </a>
+   </li>
+   <li>
       <a href="#QualitativePreferenceDescription"
          title="http://purl.org/spatialai/prefenvo/v1/core/QualitativePreferenceDescription">
          <span>Qualitative Preference Description</span>
@@ -260,6 +284,12 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#http://purl.org/spatialai/stad/v2/core/executes" title="http://purl.org/spatialai/stad/v2/core/executes">
          <span>executes</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/spatialai/stad/v2/core/generatedBy"
+         title="http://purl.org/spatialai/stad/v2/core/generatedBy">
+         <span>generated By</span>
       </a>
    </li>
    <li>
@@ -343,21 +373,9 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#predictorImportanceOf"
-         title="http://purl.org/spatialai/prefenvo/v1/core/predictorImportanceOf">
-         <span>predictor Importance Of</span>
-      </a>
-   </li>
-   <li>
       <a href="#preferenceFor"
          title="http://purl.org/spatialai/prefenvo/v1/core/preferenceFor">
          <span>preference For</span>
-      </a>
-   </li>
-   <li>
-      <a href="#preferenceIn"
-         title="http://purl.org/spatialai/prefenvo/v1/core/preferenceIn">
-         <span>preference In</span>
       </a>
    </li>
    <li>
@@ -382,16 +400,19 @@ This ontology has the following classes and properties.</span>
    </li>
 </ul><iframe src="webvowl/index.html"></iframe> 
 </div>
-  
-
-<!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">Preferences for Environments Ontology (PrefEnvO): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-
-<span class="markdown">PrefEnvO is an ontology for capturing and analyzing species-environment relationships.</span></div>
    
+<!--DESCRIPTION SECTION-->
+
+<div id="description"><h2 id="desc" class="list">Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+	<span class="markdown">PrefEnvO allows the capturing of organisms’ habitat requirements and interactions with various environmental factors. This ontology pattern facilitates a detailed and structured representation of the specific environmental conditions in which organisms thrive, allowing for precise querying and analysis of these preferences. Key components of the PrefEnvO pattern include representations of organisms and specific environmental variables, such as “Summer Mean Temperature” or “Soil pH.” It also includes detailed descriptions of the conditions under which organisms can thrive, which can be expressed as ranges, single thresholds, or qualitative summaries. Additionally, the pattern accounts for the relative significance of each environmental variable’s influence on an organism’s distribution, as well as the geographical region and time period relevant to the environmental preferences. By integrating these elements, PrefEnvO provides a comprehensive and flexible approach to understanding and modeling the environmental preferences of organisms, essential for various applications in ecology and environmental management.</span>
+
+	<img src="images/PrefEnvO_ConceptualPattern.png" alt="Description diagrams of PrefEnvO" style="width:1000px;height:500px;display:block;margin:0 auto 20px auto;>
+
+</div>
 
 <!--CROSSREF SECTION-->
-   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Preferences for Environments Ontology (PrefEnvO) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by Preferences for Environments Ontology (PrefEnvO).
 <div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
  <h3 id="classes-headline" class="list">Classes</h3>
@@ -411,6 +432,8 @@ This section provides details for each class and property defined by Preferences
   <li><a href="#http://purl.org/spatialai/stad/v2/core/Parameter" title="http://purl.org/spatialai/stad/v2/core/Parameter"> <span>Parameter</span> </a></li>
   <li><a href="#http://purl.org/spatialai/stad/v2/core/ParameterSetting" title="http://purl.org/spatialai/stad/v2/core/ParameterSetting"> <span>Parameter Setting</span> </a></li>
   <li><a href="#PredictorImportance" title="http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance"> <span>Predictor Importance</span> </a></li>
+  <li><a href="#PredictorImportanceRank" title="http://purl.org/spatialai/prefenvo/v1/core/PredictorImportanceRank"> <span>Predictor Importance Rank</span> </a></li>
+  <li><a href="#PreferenceDescription" title="http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription"> <span>Preference Description</span> </a></li>
   <li><a href="#QualitativePreferenceDescription" title="http://purl.org/spatialai/prefenvo/v1/core/QualitativePreferenceDescription"> <span>Qualitative Preference Description</span> </a></li>
   <li><a href="#QuantitativePreferenceDescription" title="http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription"> <span>Quantitative Preference Description</span> </a></li>
  </ul>
@@ -485,11 +508,20 @@ This section provides details for each class and property defined by Preferences
    <dd>
     <a href="#http://purl.org/spatialai/stad/v2/core/executes" title="http://purl.org/spatialai/stad/v2/core/executes">executes</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/spatialai/stad/v2/core/realizes" title="http://purl.org/spatialai/stad/v2/core/realizes">realizes</a> <sup class="type-op" title="object property">op</sup>
    </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://purl.org/spatialai/stad/v2/core/generatedBy" title="http://purl.org/spatialai/stad/v2/core/generatedBy">generated By</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
   </dl>
  </div>
  <div class="entity" id="AuthoritativeEnvironmentalPreferenceSet">
   <h3>Authoritative Environmental Preference Set<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeEnvironmentalPreferenceSet</p>
+  <div class="comment">
+   <span class="markdown">Environmental preferences derived from literature sources</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -508,6 +540,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="AuthoritativeSourceDescription">
   <h3>Authoritative Source Description<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeSourceDescription</p>
+  <div class="comment">
+   <span class="markdown">Provides provenance information for an AuthoritativeEnvironmentalPreferenceSet regarding the source of the information</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -524,6 +559,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="ComputationalEnvironmentalPreferenceSet">
   <h3>Computational Environmental Preference Set<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/ComputationalEnvironmentalPreferenceSet</p>
+  <div class="comment">
+   <span class="markdown">Environmental preferences derived directedly from observation data</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -536,6 +574,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="CorrelationCluster">
   <h3>Correlation Cluster<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster</p>
+  <div class="comment">
+   <span class="markdown">correlation cluster groups environmental variables based on their similar influence or importance for an organism</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -599,6 +640,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="EnvironmentalPreference">
   <h3>Environmental Preference<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference</p>
+  <div class="comment">
+   <span class="markdown">Specific preference of an organism regarding a specific environmental variable</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -621,6 +665,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="EnvironmentalPreferenceSet">
   <h3>Environmental Preference Set<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet</p>
+  <div class="comment">
+   <span class="markdown">A set of Environmental preferences of an organism for specific location and time</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -723,6 +770,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="PredictorImportance">
   <h3>Predictor Importance<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance</p>
+  <div class="comment">
+   <span class="markdown">Provides an indication of the influence of an environmental variable on an organism or group of organisms</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -742,15 +792,46 @@ This section provides details for each class and property defined by Preferences
    </dd>
   </dl>
  </div>
+ <div class="entity" id="PredictorImportanceRank">
+  <h3>Predictor Importance Rank<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/PredictorImportanceRank</p>
+  <div class="comment">
+   <span class="markdown"> Provides importance of each preference by assigning a rank to indicate the extent of a preference relative to other preferences of the organism</span>
+  </div>
+ </div>
+ <div class="entity" id="PreferenceDescription">
+  <h3>Preference Description<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription</p>
+  <div class="comment">
+   <span class="markdown">Provides an indication of the influence of an environmental variable on an organism or group of organisms</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#QualitativePreferenceDescription" title="http://purl.org/spatialai/prefenvo/v1/core/QualitativePreferenceDescription">Qualitative Preference Description</a> <sup class="type-c" title="class">c</sup>, <a href="#QuantitativePreferenceDescription" title="http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription">Quantitative Preference Description</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasPreferenceDescription" title="http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription">has Preference Description</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="QualitativePreferenceDescription">
   <h3>Qualitative Preference Description<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/QualitativePreferenceDescription</p>
+  <div class="comment">
+   <span class="markdown">Preferences of environmental variables that are measured qualitatively, typically non-numeric, attributes that denote categorical distinctions such as different soil types</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
-    <a href="http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription" target="_blank" title="http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription">Preference Description</a> <sup class="type-c" title="class">c</sup>
+    <a href="#PreferenceDescription" title="http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription">Preference Description</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
@@ -763,12 +844,15 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="QuantitativePreferenceDescription">
   <h3>Quantitative Preference Description<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription</p>
+  <div class="comment">
+   <span class="markdown">Preferences that can be expressed and measured in numerical terms, encompassing specific quantitative values for environmental variables</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
-    <a href="http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription" target="_blank" title="http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription">Preference Description</a> <sup class="type-c" title="class">c</sup>
+    <a href="#PreferenceDescription" title="http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription">Preference Description</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
@@ -786,6 +870,7 @@ This section provides details for each class and property defined by Preferences
   <li><a href="#correlatingQuality" title="http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality"> <span>correlating Quality</span> </a></li>
   <li><a href="#environmentalPreferenceOf" title="http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf"> <span>environmental Preference Of</span> </a></li>
   <li><a href="#http://purl.org/spatialai/stad/v2/core/executes" title="http://purl.org/spatialai/stad/v2/core/executes"> <span>executes</span> </a></li>
+  <li><a href="#http://purl.org/spatialai/stad/v2/core/generatedBy" title="http://purl.org/spatialai/stad/v2/core/generatedBy"> <span>generated By</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#hadPrimarySource" title="http://www.w3.org/ns/prov#hadPrimarySource">hadPrimarySource</a></li>
   <li><a href="#hasAuthoritativeSourceDescription" title="http://purl.org/spatialai/prefenvo/v1/core/hasAuthoritativeSourceDescription"> <span>has Authoritative Source Description</span> </a></li>
   <li><a href="#hasEnvironmentalPreference" title="http://purl.org/spatialai/prefenvo/v1/core/hasEnvironmentalPreference"> <span>has Environmental Preference</span> </a></li>
@@ -800,9 +885,7 @@ This section provides details for each class and property defined by Preferences
   <li><a href="#importanceWithin" title="http://purl.org/spatialai/prefenvo/v1/core/importanceWithin"> <span>importance Within</span> </a></li>
   <li><a href="#maximumPreference" title="http://purl.org/spatialai/prefenvo/v1/core/maximumPreference"> <span>maximum Preference</span> </a></li>
   <li><a href="#minimumPreference" title="http://purl.org/spatialai/prefenvo/v1/core/minimumPreference"> <span>minimum Preference</span> </a></li>
-  <li><a href="#predictorImportanceOf" title="http://purl.org/spatialai/prefenvo/v1/core/predictorImportanceOf"> <span>predictor Importance Of</span> </a></li>
   <li><a href="#preferenceFor" title="http://purl.org/spatialai/prefenvo/v1/core/preferenceFor"> <span>preference For</span> </a></li>
-  <li><a href="#preferenceIn" title="http://purl.org/spatialai/prefenvo/v1/core/preferenceIn"> <span>preference In</span> </a></li>
   <li><a href="#preferenceValue" title="http://purl.org/spatialai/prefenvo/v1/core/preferenceValue"> <span>preference Value</span> </a></li>
   <li><a href="#http://purl.org/spatialai/stad/v2/core/realizes" title="http://purl.org/spatialai/stad/v2/core/realizes"> <span>realizes</span> </a></li>
   <li><a href="#http://purl.org/spatialai/stad/v2/core/specifiedBy" title="http://purl.org/spatialai/stad/v2/core/specifiedBy"> <span>specified By</span> </a></li>
@@ -811,6 +894,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="associatedCluster">
   <h3>associated Cluster<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/associatedCluster</p>
+  <div class="comment">
+   <span class="markdown">links an prefernce environment to its associated correlation cluster.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -831,6 +917,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="containsPreference">
   <h3>contains Preference<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/containsPreference</p>
+  <div class="comment">
+   <span class="markdown">Links EnvironmentalPreferenceSet with every EnvironmentalPreference that is part of the set.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -845,18 +934,15 @@ This section provides details for each class and property defined by Preferences
     <dd>
      <a href="#EnvironmentalPreference" title="http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference">Environmental Preference</a> <sup class="type-c" title="class">c</sup>
     </dd>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="#preferenceIn" title="http://purl.org/spatialai/prefenvo/v1/core/preferenceIn">preference In</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
    </dl>
   </div>
  </div>
  <div class="entity" id="correlatingQuality">
   <h3>correlating Quality<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality</p>
+  <div class="comment">
+   <span class="markdown">connects to every environmental variable that is part of a correlation cluster.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -871,6 +957,12 @@ This section provides details for each class and property defined by Preferences
     <dd>
      <a href="http://purl.org/spatialai/stad/v2/core/QualityKind" target="_blank" title="http://purl.org/spatialai/stad/v2/core/QualityKind">Quality Kind</a> <sup class="type-c" title="class">c</sup>
     </dd>
+    <dt>
+     has sub-property chains
+    </dt>
+    <dd>
+     <span class="logic">o</span> <a href="#preferenceFor" title="http://purl.org/spatialai/prefenvo/v1/core/preferenceFor">preference For</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
    </dl>
   </div>
  </div>
@@ -878,7 +970,7 @@ This section provides details for each class and property defined by Preferences
   <h3>environmental Preference Of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf</p>
   <div class="comment">
-   <span class="markdown">links and organism to its prefernce environmenta.</span>
+   <span class="markdown">links an organism to its prefernce environment.</span>
   </div>
   <div class="description">
    <dl>
@@ -892,7 +984,7 @@ This section provides details for each class and property defined by Preferences
      has sub-property chains
     </dt>
     <dd>
-     <a href="#preferenceIn" title="http://purl.org/spatialai/prefenvo/v1/core/preferenceIn">preference In</a> <sup class="type-op" title="object property">op</sup> <span class="logic">o</span> <a href="#environmentalPreferenceOf" title="http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf">environmental Preference Of</a> <sup class="type-op" title="object property">op</sup>
+     <span class="logic">o</span> <a href="#environmentalPreferenceOf" title="http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf">environmental Preference Of</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -900,6 +992,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="http://purl.org/spatialai/stad/v2/core/executes">
   <h3>executes<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/stad/v2/core/executes</p>
+  <div class="comment">
+   <span class="markdown">Links an AlgorithmExecution to the specific Implementaion of the Algorithm executed.</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -921,6 +1016,29 @@ This section provides details for each class and property defined by Preferences
     </dt>
     <dd>
      <a href="#http://purl.org/spatialai/stad/v2/core/Implementation" title="http://purl.org/spatialai/stad/v2/core/Implementation">Implementation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/spatialai/stad/v2/core/generatedBy">
+  <h3>generated By<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/spatialai/stad/v2/core/generatedBy</p>
+  <div class="comment">
+   <span class="markdown">Links anything that is generated by an Algorithm to the specific AlgorithmExecution that was used</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://purl.org/spatialai/stad/v2/core/AlgorithmExecution" title="http://purl.org/spatialai/stad/v2/core/AlgorithmExecution">Algorithm Execution</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -956,6 +1074,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="hasAuthoritativeSourceDescription">
   <h3>has Authoritative Source Description<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/hasAuthoritativeSourceDescription</p>
+  <div class="comment">
+   <span class="markdown">links an authoritative preference preference set to the authoritative entity that published the information.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -976,6 +1097,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="hasEnvironmentalPreference">
   <h3>has Environmental Preference<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/hasEnvironmentalPreference</p>
+  <div class="comment">
+   <span class="markdown">This is the inverse of environmentalPreferenceOf; it links an organism to its preferences.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -1002,6 +1126,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="hasImportanceRank">
   <h3>has Importance Rank<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank</p>
+  <div class="comment">
+   <span class="markdown">Assigns a rank to a PredictorImportance instance.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -1062,6 +1189,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="hasPredictorImportance">
   <h3>has Predictor Importance<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance</p>
+  <div class="comment">
+   <span class="markdown">Links EnvironmentalPreference to PredictorImportance.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -1076,18 +1206,15 @@ This section provides details for each class and property defined by Preferences
     <dd>
      <a href="#PredictorImportance" title="http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance">Predictor Importance</a> <sup class="type-c" title="class">c</sup>
     </dd>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="#predictorImportanceOf" title="http://purl.org/spatialai/prefenvo/v1/core/predictorImportanceOf">predictor Importance Of</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
    </dl>
   </div>
  </div>
  <div class="entity" id="hasPreferenceDescription">
   <h3>has Preference Description<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription</p>
+  <div class="comment">
+   <span class="markdown">Links EnvironmentalPreference to PreferenceDescription.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -1100,7 +1227,7 @@ This section provides details for each class and property defined by Preferences
      has range
     </dt>
     <dd>
-     <a href="http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription" target="_blank" title="http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription">Preference Description</a> <sup class="type-c" title="class">c</sup>
+     <a href="#PreferenceDescription" title="http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription">Preference Description</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -1108,6 +1235,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="hasSpatialCoverage">
   <h3>has Spatial Coverage<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/hasSpatialCoverage</p>
+  <div class="comment">
+   <span class="markdown">Links EnvironmentalPreference or EnvironmentalPreferenceSet to spatial region the preference refers.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -1126,7 +1256,7 @@ This section provides details for each class and property defined by Preferences
      has sub-property chains
     </dt>
     <dd>
-     <a href="#preferenceIn" title="http://purl.org/spatialai/prefenvo/v1/core/preferenceIn">preference In</a> <sup class="type-op" title="object property">op</sup> <span class="logic">o</span> <a href="#hasSpatialCoverage" title="http://purl.org/spatialai/prefenvo/v1/core/hasSpatialCoverage">has Spatial Coverage</a> <sup class="type-op" title="object property">op</sup>
+     <span class="logic">o</span> <a href="#hasSpatialCoverage" title="http://purl.org/spatialai/prefenvo/v1/core/hasSpatialCoverage">has Spatial Coverage</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -1134,6 +1264,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="hasTemporalCoverage">
   <h3>has Temporal Coverage<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage</p>
+  <div class="comment">
+   <span class="markdown">Links EnvironmentalPreference or EnvironmentalPreferenceSet to time interval the preference refers.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -1152,7 +1285,7 @@ This section provides details for each class and property defined by Preferences
      has sub-property chains
     </dt>
     <dd>
-     <a href="#preferenceIn" title="http://purl.org/spatialai/prefenvo/v1/core/preferenceIn">preference In</a> <sup class="type-op" title="object property">op</sup> <span class="logic">o</span> <a href="#hasTemporalCoverage" title="http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage">has Temporal Coverage</a> <sup class="type-op" title="object property">op</sup>
+     <span class="logic">o</span> <a href="#hasTemporalCoverage" title="http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage">has Temporal Coverage</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -1188,6 +1321,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="importanceWithin">
   <h3>importance Within<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/importanceWithin</p>
+  <div class="comment">
+   <span class="markdown">Connects PredictorImportance to the EnvironmentalPreferenceSet within which relative ranking is valid.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -1206,7 +1342,7 @@ This section provides details for each class and property defined by Preferences
      has sub-property chains
     </dt>
     <dd>
-     <a href="#predictorImportanceOf" title="http://purl.org/spatialai/prefenvo/v1/core/predictorImportanceOf">predictor Importance Of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">o</span> <a href="#preferenceIn" title="http://purl.org/spatialai/prefenvo/v1/core/preferenceIn">preference In</a> <sup class="type-op" title="object property">op</sup>
+     <span class="logic">o</span>
     </dd>
    </dl>
   </div>
@@ -1214,6 +1350,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="maximumPreference">
   <h3>maximum Preference<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/maximumPreference</p>
+  <div class="comment">
+   <span class="markdown">Expresses the maximum value of a quantitative preference.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -1234,6 +1373,9 @@ This section provides details for each class and property defined by Preferences
  <div class="entity" id="minimumPreference">
   <h3>minimum Preference<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/minimumPreference</p>
+  <div class="comment">
+   <span class="markdown">Expresses the minimum value of a quantitative preference.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -1251,23 +1393,12 @@ This section provides details for each class and property defined by Preferences
    </dl>
   </div>
  </div>
- <div class="entity" id="predictorImportanceOf">
-  <h3>predictor Importance Of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/predictorImportanceOf</p>
-  <div class="description">
-   <dl>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="#hasPredictorImportance" title="http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance">has Predictor Importance</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="preferenceFor">
   <h3>preference For<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/preferenceFor</p>
+  <div class="comment">
+   <span class="markdown">Links EnvironmentalPreference to the quality kind for which the preference refers.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -1285,25 +1416,11 @@ This section provides details for each class and property defined by Preferences
    </dl>
   </div>
  </div>
- <div class="entity" id="preferenceIn">
-  <h3>preference In<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/preferenceIn</p>
-  <div class="description">
-   <dl>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="#containsPreference" title="http://purl.org/spatialai/prefenvo/v1/core/containsPreference">contains Preference</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="preferenceValue">
   <h3>preference Value<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spatialai/prefenvo/v1/core/preferenceValue</p>
   <div class="comment">
-   <span class="markdown">used in preference description to to link preference to categorical values.</span>
+   <span class="markdown">used in preference description to link preference to categorical values.</span>
   </div>
   <div class="description">
    <dl>
