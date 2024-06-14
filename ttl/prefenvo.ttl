@@ -1,0 +1,535 @@
+@prefix : <http://purl.org/spatialai/prefenvo/v1/core/> .
+@prefix epo: <http://purl.org/spatialai/prefenvo/v1/core/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix stad: <http://purl.org/spatialai/stad/v2/core/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://purl.org/spatialai/prefenvo/v1/core/> .
+
+<http://purl.org/spatialai/prefenvo/v1/core/> rdf:type owl:Ontology ;
+                                               owl:versionIRI <http://purl.org/spatialai/prefenvo/v1/core/> ;
+                                               dcterms:created "2024-06-12"^^xsd:date ;
+                                               dcterms:creator "Kate Beard - https://orcid.org/0000-0002-7703-0270"@en ,
+                                                               "Kingsley Wiafe-Kwakye - https://orcid.org/0009-0007-3741-3721"@en ,
+                                                               "Torsten Hahmann - http://orcid.org/0000-0002-5331-5052"@en ;
+                                               dcterms:description "PrefEnvO is an ontology for capturing and analyzing species-environment relationships."@en ;
+                                               dcterms:identifier "http://purl.org/spatialai/prefenvo/v1/core/"@en ;
+                                               dcterms:issued "2024-06-12"^^xsd:date ;
+                                               dcterms:license "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/)."@en ;
+                                               dcterms:modified "2024-05-30"^^xsd:date ;
+                                               dcterms:publisher "Spatial Knowledge and Artificial Intelligence (SKAI) Lab, University of Maine"@en ;
+                                               dcterms:subject "Environmental preference" ,
+                                                               "Habitat" ,
+                                                               "Niche" ;
+                                               dcterms:title "Preferences for Environments Ontology (PrefEnvO)"@en ;
+                                               owl:versionInfo "1.0"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/subject
+dcterms:subject rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#definition
+prov:definition rdf:type owl:AnnotationProperty ;
+                rdfs:comment "A definition quoted from PROV-DM or PROV-CONSTRAINTS that describes the concept expressed with this OWL term."@en ;
+                rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/spatialai/prefenvo/v1/core/associatedCluster
+epo:associatedCluster rdf:type owl:ObjectProperty ;
+                      rdfs:domain epo:EnvironmentalPreference ;
+                      rdfs:range epo:CorrelationCluster ;
+                      rdfs:comment "links an prefernce environment to its associated correlation cluster."@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/containsPreference
+epo:containsPreference rdf:type owl:ObjectProperty ;
+                       rdfs:domain epo:EnvironmentalPreferenceSet ;
+                       rdfs:range epo:EnvironmentalPreference ;
+                       rdfs:comment "Links EnvironmentalPreferenceSet with every EnvironmentalPreference that is part of the set."@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/correlatingQuality
+epo:correlatingQuality rdf:type owl:ObjectProperty ;
+                       rdfs:domain epo:CorrelationCluster ;
+                       rdfs:range stad:QualityKind ;
+                       owl:propertyChainAxiom ( [ owl:inverseOf epo:associatedCluster
+                                                ]
+                                                epo:preferenceFor
+                                              ) ;
+                       rdfs:comment "connects to every environmental variable that is part of a correlation cluster."@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/environmentalPreferenceOf
+epo:environmentalPreferenceOf rdf:type owl:ObjectProperty ;
+                              owl:inverseOf epo:hasEnvironmentalPreference ;
+                              owl:propertyChainAxiom ( [ owl:inverseOf epo:containsPreference
+                                                       ]
+                                                       epo:environmentalPreferenceOf
+                                                     ) ;
+                              rdfs:comment "links an organism to its prefernce environment."@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/hasAuthoritativeSourceDescription
+epo:hasAuthoritativeSourceDescription rdf:type owl:ObjectProperty ;
+                                      rdfs:domain epo:AuthoritativeEnvironmentalPreferenceSet ;
+                                      rdfs:range epo:AuthoritativeSourceDescription ;
+                                      rdfs:comment "links an authoritative preference preference set to the authoritative entity that published the information."@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/hasEnvironmentalPreference
+epo:hasEnvironmentalPreference rdf:type owl:ObjectProperty ;
+                               rdfs:domain owl:Thing ;
+                               rdfs:range [ rdf:type owl:Class ;
+                                            owl:unionOf ( epo:EnvironmentalPreference
+                                                          epo:EnvironmentalPreferenceSet
+                                                        )
+                                          ] ;
+                               rdfs:comment "This is the inverse of environmentalPreferenceOf; it links an organism to its preferences."@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/hasImportanceRank
+epo:hasImportanceRank rdf:type owl:ObjectProperty ;
+                      rdfs:domain epo:PredictorImportance ;
+                      rdfs:range epo:ImportanceRank ;
+                      rdfs:comment "Assigns a rank to a PredictorImportance instance."@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/hasPredictorImportance
+epo:hasPredictorImportance rdf:type owl:ObjectProperty ;
+                           rdfs:domain epo:EnvironmentalPreference ;
+                           rdfs:range epo:PredictorImportance ;
+                           rdfs:comment "Links EnvironmentalPreference to PredictorImportance."@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/hasPreferenceDescription
+epo:hasPreferenceDescription rdf:type owl:ObjectProperty ;
+                             rdfs:domain epo:EnvironmentalPreference ;
+                             rdfs:range epo:PreferenceDescription ;
+                             rdfs:comment "Links EnvironmentalPreference to PreferenceDescription."@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/hasSpatialCoverage
+epo:hasSpatialCoverage rdf:type owl:ObjectProperty ;
+                       rdfs:domain [ rdf:type owl:Class ;
+                                     owl:unionOf ( epo:EnvironmentalPreference
+                                                   epo:EnvironmentalPreferenceSet
+                                                 )
+                                   ] ;
+                       rdfs:range stad:SpatialCoverage ;
+                       owl:propertyChainAxiom ( [ owl:inverseOf epo:containsPreference
+                                                ]
+                                                epo:hasSpatialCoverage
+                                              ) ;
+                       rdfs:comment "Links EnvironmentalPreference or EnvironmentalPreferenceSet to spatial region the preference refers."@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/hasTemporalCoverage
+epo:hasTemporalCoverage rdf:type owl:ObjectProperty ;
+                        rdfs:domain [ rdf:type owl:Class ;
+                                      owl:unionOf ( epo:EnvironmentalPreference
+                                                    epo:EnvironmentalPreferenceSet
+                                                  )
+                                    ] ;
+                        rdfs:range stad:TemporalCoverage ;
+                        owl:propertyChainAxiom ( [ owl:inverseOf epo:containsPreference
+                                                 ]
+                                                 epo:hasTemporalCoverage
+                                               ) ;
+                        rdfs:comment "Links EnvironmentalPreference or EnvironmentalPreferenceSet to time interval the preference refers."@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/importanceWithin
+epo:importanceWithin rdf:type owl:ObjectProperty ;
+                     rdfs:domain epo:PredictorImportance ;
+                     rdfs:range epo:EnvironmentalPreferenceSet ;
+                     owl:propertyChainAxiom ( [ owl:inverseOf epo:hasPredictorImportance
+                                              ]
+                                              [ owl:inverseOf epo:containsPreference
+                                              ]
+                                            ) ;
+                     rdfs:comment "Connects PredictorImportance to the EnvironmentalPreferenceSet within which relative ranking is valid."@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/maximumPreference
+epo:maximumPreference rdf:type owl:ObjectProperty ;
+                      rdfs:domain epo:QuantitativePreferenceDescription ;
+                      rdfs:range stad:QuantitativeValue ;
+                      rdfs:comment "Expresses the maximum value of a quantitative preference."@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/minimumPreference
+epo:minimumPreference rdf:type owl:ObjectProperty ;
+                      rdfs:domain epo:QuantitativePreferenceDescription ;
+                      rdfs:range stad:QuantitativeValue ;
+                      rdfs:comment "Expresses the minimum value of a quantitative preference."@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/preferenceFor
+epo:preferenceFor rdf:type owl:ObjectProperty ;
+                  rdfs:domain epo:EnvironmentalPreference ;
+                  rdfs:range stad:QualityKind ;
+                  rdfs:comment "Links EnvironmentalPreference to the quality kind for which the preference refers."@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/preferenceValue
+epo:preferenceValue rdf:type owl:ObjectProperty ;
+                    rdfs:domain epo:QualitativePreferenceDescription ;
+                    rdfs:range stad:QualitativeValue ;
+                    rdfs:comment "used in preference description to link preference to categorical values."@en .
+
+
+###  http://purl.org/spatialai/stad/v2/core/executes
+stad:executes rdf:type owl:ObjectProperty ;
+              rdfs:domain stad:AlgorithmExecution ;
+              rdfs:range stad:Implementation ;
+              rdfs:comment "Links an AlgorithmExecution to the specific Implementaion of the Algorithm executed."@en ;
+              rdfs:isDefinedBy "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^xsd:anyURI .
+
+
+###  http://purl.org/spatialai/stad/v2/core/generatedBy
+stad:generatedBy rdf:type owl:ObjectProperty ;
+                 rdfs:domain owl:Thing ;
+                 rdfs:range stad:AlgorithmExecution ;
+                 rdfs:comment "Links anything that is generated by an Algorithm to the specific AlgorithmExecution that was used"@en .
+
+
+###  http://purl.org/spatialai/stad/v2/core/hasInput
+stad:hasInput rdf:type owl:ObjectProperty ;
+              rdfs:isDefinedBy "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^xsd:anyURI .
+
+
+###  http://purl.org/spatialai/stad/v2/core/hasParameter
+stad:hasParameter rdf:type owl:ObjectProperty ;
+                  rdfs:domain stad:Implementation ;
+                  rdfs:range stad:Parameter ;
+                  rdfs:isDefinedBy "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^xsd:anyURI .
+
+
+###  http://purl.org/spatialai/stad/v2/core/implements
+stad:implements rdf:type owl:ObjectProperty ;
+                rdfs:domain stad:Implementation ;
+                rdfs:range stad:Algorithm ;
+                rdfs:isDefinedBy "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^xsd:anyURI .
+
+
+###  http://purl.org/spatialai/stad/v2/core/realizes
+stad:realizes rdf:type owl:ObjectProperty ;
+              rdfs:domain stad:AlgorithmExecution ;
+              rdfs:range stad:Algorithm ;
+              rdfs:isDefinedBy "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^xsd:anyURI .
+
+
+###  http://purl.org/spatialai/stad/v2/core/specifiedBy
+stad:specifiedBy rdf:type owl:ObjectProperty ;
+                 rdfs:domain stad:ParameterSetting ;
+                 rdfs:range stad:Parameter ;
+                 rdfs:isDefinedBy "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^xsd:anyURI .
+
+
+###  http://www.w3.org/ns/prov#hadPrimarySource
+prov:hadPrimarySource rdf:type owl:ObjectProperty ;
+                      rdfs:domain prov:Entity ;
+                      rdfs:range prov:Entity ;
+                      rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                      rdfs:label "hadPrimarySource" .
+
+
+###  http://www.w3.org/ns/prov#wasAttributedTo
+prov:wasAttributedTo rdf:type owl:ObjectProperty ;
+                     rdfs:domain prov:Entity ;
+                     rdfs:range prov:Agent ;
+                     rdfs:comment "Attribution is the ascribing of an entity to an agent."@en ;
+                     rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                     rdfs:label "wasAttributedTo" ;
+                     prov:definition "Attribution is the ascribing of an entity to an agent."@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/spatialai/stad/v2/core/hasValue
+stad:hasValue rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeEnvironmentalPreferenceSet
+epo:AuthoritativeEnvironmentalPreferenceSet rdf:type owl:Class ;
+                                            rdfs:subClassOf epo:EnvironmentalPreferenceSet ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty epo:hasAuthoritativeSourceDescription ;
+                                                              owl:someValuesFrom epo:AuthoritativeSourceDescription
+                                                            ] ;
+                                            rdfs:comment "Environmental preferences derived from literature sources"@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/AuthoritativeSourceDescription
+epo:AuthoritativeSourceDescription rdf:type owl:Class ;
+                                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                     owl:onProperty prov:hadPrimarySource ;
+                                                     owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty prov:wasAttributedTo ;
+                                                     owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ;
+                                   rdfs:comment "Provides provenance information for an AuthoritativeEnvironmentalPreferenceSet regarding the source of the information"@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/ComputationalEnvironmentalPreferenceSet
+epo:ComputationalEnvironmentalPreferenceSet rdf:type owl:Class ;
+                                            rdfs:subClassOf epo:EnvironmentalPreferenceSet ;
+                                            rdfs:comment "Environmental preferences derived directedly from observation data"@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/CorrelationCluster
+epo:CorrelationCluster rdf:type owl:Class ;
+                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                         owl:onProperty epo:correlatingQuality ;
+                                         owl:allValuesFrom stad:QualityKind
+                                       ] ;
+                       rdfs:comment "correlation cluster groups environmental variables based on their similar influence or importance for an organism"@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreference
+epo:EnvironmentalPreference rdf:type owl:Class ;
+                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                              owl:onProperty epo:associatedCluster ;
+                                              owl:allValuesFrom epo:CorrelationCluster
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty epo:hasPredictorImportance ;
+                                              owl:allValuesFrom epo:PredictorImportance
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty epo:hasPreferenceDescription ;
+                                              owl:allValuesFrom epo:PreferenceDescription
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty epo:preferenceFor ;
+                                              owl:allValuesFrom stad:QualityKind
+                                            ] ;
+                            rdfs:comment "Specific preference of an organism regarding a specific environmental variable"@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/EnvironmentalPreferenceSet
+epo:EnvironmentalPreferenceSet rdf:type owl:Class ;
+                               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                 owl:onProperty epo:containsPreference ;
+                                                 owl:allValuesFrom epo:EnvironmentalPreference
+                                               ] ;
+                               rdfs:comment "A set of Environmental preferences of an organism for specific location and time"@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/ImportanceRank
+epo:ImportanceRank rdf:type owl:Class .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/PredictorImportance
+epo:PredictorImportance rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty epo:hasImportanceRank ;
+                                          owl:someValuesFrom epo:PredictorImportanceRank
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty stad:generatedBy ;
+                                          owl:someValuesFrom stad:AlgorithmExecution
+                                        ] ;
+                        rdfs:comment "Provides an indication of the influence of an environmental variable on an organism or group of organisms"@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/PredictorImportanceRank
+epo:PredictorImportanceRank rdf:type owl:Class ;
+                            rdfs:comment " Provides importance of each preference by assigning a rank to indicate the extent of a preference relative to other preferences of the organism"@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/PreferenceDescription
+epo:PreferenceDescription rdf:type owl:Class ;
+                          rdfs:comment "Provides an indication of the influence of an environmental variable on an organism or group of organisms"@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/QualitativePreferenceDescription
+epo:QualitativePreferenceDescription rdf:type owl:Class ;
+                                     rdfs:subClassOf epo:PreferenceDescription ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty epo:preferenceValue ;
+                                                       owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                     ] ;
+                                     rdfs:comment "Preferences of environmental variables that are measured qualitatively, typically non-numeric, attributes that denote categorical distinctions such as different soil types"@en .
+
+
+###  http://purl.org/spatialai/prefenvo/v1/core/QuantitativePreferenceDescription
+epo:QuantitativePreferenceDescription rdf:type owl:Class ;
+                                      rdfs:subClassOf epo:PreferenceDescription ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty epo:maximumPreference ;
+                                                        owl:someValuesFrom stad:QuantitativeValue
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty epo:minimumPreference ;
+                                                        owl:someValuesFrom stad:QuantitativeValue
+                                                      ] ;
+                                      rdfs:comment "Preferences that can be expressed and measured in numerical terms, encompassing specific quantitative values for environmental variables"@en .
+
+
+###  http://purl.org/spatialai/stad/v2/core/Algorithm
+stad:Algorithm rdf:type owl:Class ;
+               rdfs:isDefinedBy "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^xsd:anyURI .
+
+
+###  http://purl.org/spatialai/stad/v2/core/AlgorithmExecution
+stad:AlgorithmExecution rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty stad:hasInput ;
+                                          owl:someValuesFrom stad:Data
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty stad:hasInput ;
+                                          owl:someValuesFrom stad:ParameterSetting
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty stad:realizes ;
+                                          owl:someValuesFrom stad:Algorithm
+                                        ] ;
+                        rdfs:isDefinedBy "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^xsd:anyURI .
+
+
+###  http://purl.org/spatialai/stad/v2/core/Data
+stad:Data rdf:type owl:Class .
+
+
+###  http://purl.org/spatialai/stad/v2/core/DataTransformation
+stad:DataTransformation rdf:type owl:Class ;
+                        rdfs:subClassOf stad:Algorithm .
+
+
+###  http://purl.org/spatialai/stad/v2/core/Implementation
+stad:Implementation rdf:type owl:Class ;
+                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty stad:hasParameter ;
+                                      owl:someValuesFrom stad:Parameter
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty stad:implements ;
+                                      owl:someValuesFrom stad:Algorithm
+                                    ] ;
+                    rdfs:isDefinedBy "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^xsd:anyURI .
+
+
+###  http://purl.org/spatialai/stad/v2/core/Parameter
+stad:Parameter rdf:type owl:Class ;
+               rdfs:isDefinedBy "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^xsd:anyURI .
+
+
+###  http://purl.org/spatialai/stad/v2/core/ParameterSetting
+stad:ParameterSetting rdf:type owl:Class ;
+                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                        owl:onProperty stad:specifiedBy ;
+                                        owl:someValuesFrom stad:Parameter
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty stad:hasValue ;
+                                        owl:someValuesFrom rdfs:Literal
+                                      ] ;
+                      rdfs:isDefinedBy "http://ontologydesignpatterns.org/wiki/images/4/41/WOP2016_paper_07.pdf"^^xsd:anyURI .
+
+
+###  http://purl.org/spatialai/stad/v2/core/QualitativeValue
+stad:QualitativeValue rdf:type owl:Class .
+
+
+###  http://purl.org/spatialai/stad/v2/core/QualityKind
+stad:QualityKind rdf:type owl:Class .
+
+
+###  http://purl.org/spatialai/stad/v2/core/QuantitativeValue
+stad:QuantitativeValue rdf:type owl:Class .
+
+
+###  http://purl.org/spatialai/stad/v2/core/SpatialCoverage
+stad:SpatialCoverage rdf:type owl:Class .
+
+
+###  http://purl.org/spatialai/stad/v2/core/TemporalCoverage
+stad:TemporalCoverage rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Agent
+prov:Agent rdf:type owl:Class ;
+           rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+           rdfs:label "Agent" ;
+           prov:definition "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. "@en .
+
+
+###  http://www.w3.org/ns/prov#Entity
+prov:Entity rdf:type owl:Class ;
+            rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+            rdfs:label "Entity" ;
+            prov:definition "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. "@en .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
